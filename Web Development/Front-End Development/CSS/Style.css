@@ -1,0 +1,87 @@
+body {
+  color: blue;
+  /*
+  Topic: Backgrounds:
+    background-color: aqua;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background: #d4d4bd;
+
+  Topic: Decoration:
+    list-style-type: none;
+    display: inline;
+    outline: 4px solid black;
+    float: right;
+
+  Topic: Fonts:
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 1.4vw;
+
+  Topic: Sizes:
+    height: 24px;
+    width: 50%;
+
+  Topic: Text:
+    text-decoration: none;
+    text-shadow:1px;
+    text-align: right;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing:3px;  
+    direction:initial;
+
+   Topic: Box Model:
+    box-shadow: 5px -10px 29px 8px rgba(31, 166, 23, 1);
+    box-sizing: border-box;
+
+    SubTopic: Borders:
+      border-style: solid;
+      border-top-style: dashed;
+      border-width: 2px;
+      border-color: red;
+      border: 5px solid green;
+      border-radius: 18px;
+
+    SubTopic: Margins:
+      margin-top: 84px;
+      margin-left: 94px;
+      margin-right: 94px;
+      margin: 23px 67px 56px 0;
+
+    SubTopic: Padding:
+      padding: 24px 0;
+      padding-top: 4px;
+      padding-left: 1px;
+
+  Topic: Flexbox:
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+    align-items: baseline; 
+
+  Topic: States:
+    body: hover {
+      color: black;
+    }
+    body: active {
+      color: blue;
+    } */
+}
+
+/* Every property in css has a main tag for all which takes arguments.
+In a order and it's one specific property
+with it's main name and it's specification name like
+body{
+  margin: 1px 1px 3px 4px;
+  margin-top: 5px;
+}
+*/
+
+/* CSS considers the latest change. */
+
+/* Documentation:https://www.w3schools.com/cssref/default.asp */

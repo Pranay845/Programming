@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" modified="2020-11-03T05:38:40.868Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="NXN2Z9cjhdvvz6PCPLou" version="13.8.8" type="github">
+  <diagram id="Orsf1crhqboJJp6eBNd9" name="Page-1">
+    <mxGraphModel dx="1952" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RLYLoGSKtYepzW7awlBq-1" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;font style=&quot;font-size: 20px&quot;&gt;Types of&amp;nbsp;&lt;/font&gt;Servers&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="320" y="480" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;" parent="1" source="RLYLoGSKtYepzW7awlBq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="590" as="sourcePoint" />
+            <mxPoint x="670" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-7" value="" style="endArrow=classic;html=1;strokeWidth=3;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="590" as="sourcePoint" />
+            <mxPoint x="410" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-8" value="" style="endArrow=classic;html=1;strokeWidth=3;" parent="1" source="RLYLoGSKtYepzW7awlBq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="740" as="sourcePoint" />
+            <mxPoint x="220" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-9" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;" parent="1" source="RLYLoGSKtYepzW7awlBq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="660" as="sourcePoint" />
+            <mxPoint x="150" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=3;" parent="1" source="RLYLoGSKtYepzW7awlBq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="470" as="sourcePoint" />
+            <mxPoint x="410" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-11" value="" style="endArrow=classic;html=1;exitX=0.794;exitY=0.912;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=3;" parent="1" source="RLYLoGSKtYepzW7awlBq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="574" as="sourcePoint" />
+            <mxPoint x="610" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-12" value="" style="endArrow=classic;html=1;exitX=0.767;exitY=0.079;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=3;" parent="1" source="RLYLoGSKtYepzW7awlBq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="470" as="sourcePoint" />
+            <mxPoint x="600" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-13" value="" style="endArrow=classic;html=1;exitX=0.23;exitY=0.079;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=3;" parent="1" source="RLYLoGSKtYepzW7awlBq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="320" as="sourcePoint" />
+            <mxPoint x="210" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-14" value="&lt;font style=&quot;font-size: 20px&quot;&gt;File Server&lt;br&gt;(Used to store data through network)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="140" y="770" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-15" value="&lt;span style=&quot;font-size: 20px&quot;&gt;Print Server&lt;br&gt;(This manages many printers and a network server to connect them)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="320" y="810" width="210" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-17" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;Web Server&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;(These deliver the web pages.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;This has address known as IP address.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;website name is known domain name)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="540" y="750" width="310" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-18" value="&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;Database Server&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;(These process the data.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;span&gt;			&lt;/span&gt;These is known as Data Management system (DBMS).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;span&gt;			&lt;/span&gt;These Data bases respond through a Query language&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;			(These are languages which Communicate&amp;nbsp;with Database&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;span&gt;			&lt;/span&gt; through requests (Querys) so it&#39;s called Query language like MySQL etc.). )&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="670" y="450" width="440" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-19" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;Proxy Server&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;(These are servers which set in between the client and the origin server (Where the data comes from).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;span&gt;			&lt;/span&gt;These are used to improve performance)&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="600" y="210" width="290" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-20" value="&lt;span style=&quot;font-size: 20px&quot;&gt;Dedicated Server&lt;br&gt;(These are computers which are meant for only one Network/Task)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="325" y="150" width="195" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-21" value="&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;Application Server&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;(These are for the application&#39;s&amp;nbsp;operations and their databases. These&amp;nbsp;are used in Complex Apps)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="30" y="150" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RLYLoGSKtYepzW7awlBq-22" value="&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;Cloud Server&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;(These are servers which are scaled up or down according to requirements.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;These are various servers together working as one Giant Computer)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="420" width="290" height="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,66 @@
+Css is a Markup language which makes
+Webpage beautiful and attractive.
+
+Css considers the latest change.
+
+1. Css can be written in three types:
+    1. Inline css (This is written in direct html file
+       These has highest priority
+       These is not recommended).
+
+    2. Internal css (This is written as pure css in style tag of html file).
+
+    3. External css (This is written in pure css in css file).
+
+2. Css Basic Syntax:
+	Selector {
+    	Property1: Value1 ;(The value can be written in any measurement like % and pixels)
+    	Property2: Value2;
+	}
+
+
+3. Types of selectors:
+
+    Element selector:
+        Element{
+            Property1: Value1;
+        }
+
+    Id selector:
+        #Id{
+            Property1: Value1;
+        }
+
+    Class selector:
+        .Class{
+            Property1: Value1;
+        }
+
+    Terms meaning:
+        Selector: This is a pointer to element.
+
+        Element: This is a object (object is made by tags in html file).
+
+        Id: These should be written after opening tag of element.
+            These is for only a individual element.
+
+        Class: This is written in place of id.
+              These is for group of elements.
+
+        Property: This are in built to css we use them to design.
+
+        Value: This is value of property.
+
+4. In colors:
+	1. RGB means red green blue.
+	2. RGBA means red green blue alpha.
+	3. Color can be written as hex values.
+
+Class and id can written both in one tag
+many classes and many id's in css can be selected.
+
+CSS has a intelligent container called has Flexbox.
+
+CSS can be written in sass.
+Sass makes the css easy.
+We should convert sass into css because it's written in ruby.

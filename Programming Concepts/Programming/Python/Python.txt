@@ -1,0 +1,83 @@
+1. Execution of python:
+	Python is an interpreter, high-level, general-purpose programming language.
+	It is dynamically typed and garbage-collected.
+	Python is an interpreted language and not a compiled one,
+ 	Although compilation is a step.
+ 	Python code, written in .py file is first compiled
+ 	to what is called byte code which is stored with a .pyc or .pyo format.
+
+	1. Advantages of Interpreted Languages:
+		One popular advantage of interpreted languages is that they are platform-independent.
+		As long as the Python byte code and the Virtual Machine have the same version
+		Python byte code can be executed on any platform (Windows, Macs, etc).
+
+	2. Dynamic Typing:
+		Dynamic typing is another advantage. 
+		In static-typed languages like C++, you have to declare the variable type
+		and any discrepancy like adding a string and an integer is checked during compile time.
+		In strongly typed languages like Python, it is the job of the interpreter to 
+		check the validity of the variable types and operations performed.
+		Dynamic typing provides a lot of freedom, 
+		But simultaneously it makes your code risky and sometimes difficult to debug.
+		Python is often accused of being ‘slow’
+		Now while the term is relative and argued a lot,
+		The reason for being slow is because the interpreter
+		Has to do extra work to have the byte code instruction 
+		Translated into a form that can be executed on the machine.
+
+	3. Garbage Collector:
+		In older programming languages, memory allocation was quite manual.
+		Many times when you use variables that are no longer in use or referenced
+		Anywhere else in the program, they need to be cleaned from the memory.
+		Garbage Collector does that for you.
+		It automatically frees up space without you doing anything.
+		The memory management works in two ways —
+		In a simplified way, it keeps track of the number of references to an object.
+		When that number goes down to zero, it deletes that object.
+		This is called reference counting. This cannot be disabled in Python.
+		In cases where object references itself or two objects refer each other,
+		a process called generation garbage collection helps.
+		This is something traditional reference counting cannot take care of.
+
+	4. Pycache Folder:
+		As you can see, the filename is the same as the one outside __pycache__ folder.
+		The .pyc extension tells us that the file contains byte code for preprocess.py.
+		The names cpython denotes the type of interpreter.
+		CPython means that the interpreter was implemented in C language.
+		Similarly, JPython is a Python interpreter implemented in Java.
+		Well, it slightly increases the speed of the Python program.
+		Unless you change your Python code,
+		Recompilation to byte code is avoided, thereby saving time.
+
+2. Python Commands:
+	To use python interpreter in powershell == python (or) py
+	To check the version of python == python --version (or) py --version
+
+
+	To check pip commands == pip
+	To check pip version == pip --version
+	To install a python package == pip install <package name>
+	To upgrade pip == python -m pip install --upgrade pip
+	To upgrade all python packages == pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
+
+3. To make a Package:
+	1. Make a Python Package
+	2. Python setup.py bdist_wheel (Execute this command in powershell/terminal)
+
+	Note: The Directory should in setup.py
+
+4. To make a exe file to a Python file:
+	1. pip install pyinstaller (Execute this command in powershell/terminal)
+	2. Change directory to that python file you want to execute
+	3. pyinstaller --onefile -w <The python file name>
+
+	Note: -w is for not having the console when executing it
+     	     --onefile is for having only one file
+
+5. To see Documentation of Python Locally:
+	1. Open idle
+	2. Type help()
+	   and write what you want to know
+	   or If we know topic type help("topic")
+
+

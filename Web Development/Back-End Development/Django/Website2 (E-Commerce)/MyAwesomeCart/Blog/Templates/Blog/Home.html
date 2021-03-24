@@ -1,0 +1,60 @@
+{%extends 'Blog/Basic.html'%}
+{%block body%}
+<div class="container mt-3">
+  <div class="row my-2">
+    {% for item in myposts %}
+    <div class="col-md-6">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">
+            {{item.head0}}
+          </strong>
+          <h3 class="mb-0">{{item.title}}</h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="card-text mb-auto">{{item.head1}}</p>
+          <a href="Blogpost/{{item.post_id}}" class="stretched-link"
+            >Continue reading</a
+          >
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img
+            src="/Media/{{item.thumbnail}}"
+            class="bd-placeholder-img"
+            width="200"
+            height="250"
+            aria-label="Placeholder: Thumbnail"
+          />
+          <title>Placeholder</title>
+        </div>
+      </div>
+    </div>
+    {% if forloop.counter|divisibleby:2%}
+  </div>
+  <div class="row my-2">{%endif%} {%endfor%}</div>
+</div>
+{%endblock%}
+{% block current %}
+<li class="nav-item">
+  <a class="nav-link" href="/Shop">Home </a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="/Shop/About">About Us</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="/Shop/Tracker">Tracker</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="/Shop/Contact">Contact Us</a>
+</li>
+
+<li class="nav-item active">
+  <a class="nav-link" href="/Blog"
+    >Blog <span class="sr-only">(current)</span></a
+  >
+</li>
+{% endblock %}

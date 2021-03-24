@@ -1,0 +1,109 @@
+HTML is a Markup language.
+
+1. Markup languages:
+	This are languages to structure the data and 
+	enter the static (Constant) data into the page (Webpage)
+	to structure the data we use tags
+
+In html code can be directly executed by browser.
+
+In html we have a basic structure to code.
+
+2. Structure of code:
+	<!DOCTYPE html>  # this tells browser that this is a html file
+	<html> # to tell it's html code
+		<head> # this is a head for webpage
+			<title></title> # the title that we see on tab
+		</head> # closing tag of head
+		<body> # this is what we see in page like it's a body (Most code is written here)
+
+		</body> # closing tag of body
+	</html> # closing tag for html 
+
+In above code we saw tags (Keywords)
+tags are something html only understands it only sees 
+the content inside tags.
+
+Tags can be written in angular brackets (<>)
+Tags are also specific and predefined.
+ 
+They are not case sensitive(Means can be capital or small letters).
+Tags have opening and ending part.
+They are known has opening and closing tags in html.
+We can close tags by adding "/"to the tag name before
+Exceptionally we have only one part of tag.
+
+They are known as self closing tags.
+We write as <tagname/>.
+
+Many tags have attributes (Arguments).
+Which bring css with them or not.
+
+Tags inside tags are known as nested tags (We use this everywhere in code).
+
+There are different kinds of tags for different purposes
+like for commenting (Notes for humans to read) is <!--write here-->.
+
+To represent something not included in character set (All symbols) of keyboard.
+We use character codes in html.
+
+3. Essential Html Tags :
+    1. html tag:
+        All tags fall in between the html tags.
+        It defines the document as Web page.
+
+    2. head tag:
+        The header contains information like title
+        of the document that won't appear on actual page.
+
+    3. title tag
+        The title defines the title that will
+        appear in the title bar of the Web browser.
+
+    4. body tag
+        The body tags contain all the visible
+        content of the page including all images, links, etc.
+
+    1.Basic Tags:
+        1. Headings and Subheadings:
+
+            <h1> A heading </h1>
+
+            There are 6 levels of headings
+            available from smallest to largest. ( h1 to h6)
+
+        2. Paragraphs:
+
+            <p> Some text  </p>
+
+        3. Links:
+
+            <a href = "URL" </a>
+
+        4. Image:
+
+            <img src = "photo.jpg">
+
+    2.Tag Attributes:
+        Attributes helps one to customise a tag and are defined within the opening tag.
+        For Example - <ol type = "a"> (ol stands for Ordered list and ul for Unordered List)
+        Attributes are often assigned a value using the equal sign, such as width = 65%
+
+        1. Break Tag:
+            <br> Tag is used for styling. In most cases it's preferred to use CSS and Javascript for Styling.
+
+        2. Comment Tag: It's not visible on the actual page but remains saved in the language itself.
+
+            <!--- this is a comment --->
+
+        3. Form tag: It is used for adding a special Form to the Web page.
+
+            <form>
+
+            Enter your name : <input type = 'text'/>
+
+            <form>
+
+    Similarly there are also other tags like <table> tags used to form a table with table row and table headings.
+    Caption tags, Div Tags, Meta tags, etc.
+

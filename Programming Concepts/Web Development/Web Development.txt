@@ -1,0 +1,107 @@
+Front End Development:
+	HTML and CSS:
+		These are markup languages.
+		That means They use templating (Way to write code and attach it to other files) to write code.
+		These languages have tags to define elements.
+
+		HTML is used as a standard language for any website design.
+		It’s a well-standardized system.
+		For every website to be designed, HTML (Hyper Text Markup Language) is a must.
+		This is the skeleton of a website.
+ 		Without it, no website can run.
+
+		CSS (Cascading Style Sheets) is a style sheet language
+		It adds beauty to that website.
+		It is used to handle the presentation of the web page.
+		It makes the website look attractive and beautiful.
+
+		Bootstrap:
+			Bootstrap is a free CSS framework for front-end web development.
+			It contains CSS and JavaScript-based design templates for web components
+			Simply bootstrap is used to make website more attractive and cool.
+
+	Javascript:
+		JavaScript is a client scripting language which is used for creating web pages.
+		It is a brain of website.
+		It is a standalone language developed in Netscape.
+		It is used when a webpage is to be made dynamic and add special effects on pages
+		like rollover, roll out and many types of graphics.
+		It adds the brain to allow the functioning of that website.
+		It allows scripting on your website and makes it completely dynamic in nature.
+		
+		Javascript has many frameworks like Angular,Vue,React,Nodejs etc.
+		by these frameworks JS has much power we can use JS in 
+		both frontend and backend
+
+		JQuery:
+			This is a library of JavaScript which simplifies javascript functions.
+			This makes the javascript functions easier and compact.
+	
+    Html is body,Css is beauty and makes modern looking
+    Javascript and Css are included in html.
+    Therefore, CSS and JavaScript add beauty and brain to a particular website respectively.
+
+Back End Development:
+	1. PHP (It is widely used and suitable to backend)
+	2. Django (Django is a web framework (Web framework is a Module/Package that make rules for code.
+		library is a Module/Package which we can make our rules) in python which
+		is open source (free) and can be used as a backend system with html,css,javascript and other.)
+	3. Nodejs (It is a Runtime environment of JS)
+	
+	and many more
+
+VPS:
+	What is VPS?
+		VPS means Virtual private server.
+		Before the vps, there will be only one server with many websites hosted.
+		If one website needs more resources.
+		Then other websites may fall in problem. These is known has shared hosting.
+
+		In vps there will be a real server.
+		The server would be divided into many servers
+		by isolating the parts of server.
+		By this if one websites goes down
+		then there would be no difference to other websites.
+
+API: Application programming interface
+    This is to communicate with other software like a waiter in hotel
+    This returns data in form of functions
+
+	Types of API:
+		REST API (A Type of API): This is a sever which sends the object's state as data in XML/JSON format
+
+Socket Programming:
+	Public IP Address: This is the Address given to our modem to communicate to internet.
+
+	Private IP Address: This is the Address to individual device to communicate with the router.
+ 
+	What is Socket?
+		A socket is one endpoint of a two-way communication link
+		between two programs running on the network.
+		A socket is bound to a port number so that
+		each other can identify themselves and transfer data.
+		An endpoint is a combination of an IP address and a port number.
+
+	How achieve them in python?
+		To make sockets using python we need socket module built into python.
+
+Web scraping:
+	What is Web scraping?
+		Web scraping is about extracting data from a webpage.
+		This can be by humans but it's difficult and time-taking.
+		Usually it's done by soft ware’s or browser extensions 
+		These are known as web scrapers.
+		We can build our own web scrapers by coding.
+		Web scraping is useful because of valuable information.
+		It should be done with legal rights.
+		It is a grey area.
+		It can be used in python can be done by requests and beautiful soup packages.
+
+	How it happens?
+		First the html of webpage is loaded by web scraper.
+		Then it should locate the data.
+		After that can be extracted in many formats.
+	
+Note: To make good websites as a beginner we need to refer the google.
+     1. Search web designs and templates.
+     2. Use the developer tools of chrome.

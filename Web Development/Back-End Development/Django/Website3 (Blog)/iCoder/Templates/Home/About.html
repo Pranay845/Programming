@@ -1,0 +1,41 @@
+{% extends 'Base.html' %} 
+{% block title %} About iCoder {% endblock title %} 
+{% block aboutactive %} active {% endblock aboutactive %}
+{% load static %}
+{% block body %}
+    <div class="container my-4">
+      <div
+        class="row featurette d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-7">
+          <h2 class="featurette-heading">It all started with iCoder's Idea.</h2>
+          <p class="lead">We want coders</p>
+        </div>
+        <div class="col-md-5">
+          <img class="img-fluid" src="{% static 'Images/about-1.jpg' %}" alt="" />
+        </div>
+      </div>
+      <div
+        class="row featurette d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">We started iCoder in 1877</h2>
+          <p class="lead">We are the oldest company in world</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="img-fluid" src="{% static 'Images/about-2.jpg' %}" alt="" />
+        </div>
+      </div>
+      <div
+        class="row featurette d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading.</h2>
+          <p class="lead">Learn Programming</p>
+        </div>
+        <div class="col-md-5">
+          <img class="img-fluid" src="{% static 'Images/about-3.jpg' %}" alt="" />
+        </div>
+      </div>
+    </div>
+ {% endblock body %}

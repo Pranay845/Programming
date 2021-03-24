@@ -1,0 +1,159 @@
+Django:
+	This is a Backend Web Framework from Python
+	
+
+1. Django commands:
+	check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+	python manage.py runserver (To runserver)
+	python manage.py makemigrations (To tell Django that we made changes to our models you store them)
+	python manage.py migrate (To apply migrations write into the database)
+	python manage.py createsuperuser (Superuser is like a admin he has all powers, this is for viewing our models)
+	python manage.py shell (To test our code)
+
+2. Django generates some files for project there are
+	MyWebsite folder: This is the name of website and it is a python package.
+		__init__.py: This is for telling python it is a package.
+		asgi.py (Asynchronous Server Gateway Interface)
+		settings.py: This is for website settings.
+		urls.py (Django goes to this file first and then executes the code): This is for giving all the urls/mapping.
+		wsgi.py (Web server gateway interface): This is for hosting(starting). The website on a server
+	manage.py: This is for interacting with website.
+
+We use html templates with Django to make frontend stuff.
+
+In html p tag removes by default new lines .
+so to keep new lines we should use pre tag inside p tag.
+
+For transferring new line we should use both \n and also \r.
+
+3. Get and Post requests:
+	These methods are used often in html forms 
+	in html forms the default method is get.
+	
+	Documentation: https://docs.djangoproject.com/en/3.1/topics/forms/,
+		     https://docs.djangoproject.com/en/3.1/ref/request-response/
+
+    1. GET request:
+        This sends the data from url.
+        This methods takes the data in form of key and value pairs and makes url from it
+        and it contains sensitive data that may leak. So This is problematic
+        because if data is too huge then the url will be long and it has a limit so it gives error as 414.
+
+    2. POST request:
+        Post request sends additional data with message body(data)
+        (some servers can withstand this parameters)
+        to change html form write method="post".
+
+4. CSRF token:
+	CSRF stands Cross-Site Request Forgery.
+	This means that someone can add additional code to leak the data
+	and also Django sees this has the main thing.
+	CSRF is a verification of the incoming urls are from your own website.
+
+	Documentation: https://docs.djangoproject.com/en/3.1/ref/csrf/
+
+5. Django Apps:
+	Apps in Django are pluggable web applications.
+	Django apps are the self-sufficient sub module of a project.
+	A project can contain more than one apps, and an app can be used in more than more one project.
+
+	Documentation: https://docs.djangoproject.com/en/3.1/ref/applications/
+
+6. Database in Django:
+	What is Database?
+		A database is a collection of structured data stored in a computer system.
+		A database is usually controlled by a database management system (DBMS).
+		In a website the data of users is stored in a database.
+
+	What is ORM?
+		Object-relational mapping is a programming technique 
+		for converting data between objects to structured data.
+		using object-oriented programming languages like python.
+		Django orm allows us to convert classes into tables.
+
+	Documentation: https://docs.djangoproject.com/en/3.1/ref/databases/,
+	    	     https://docs.djangoproject.com/en/3.1/topics/db/
+
+7. Models in Django:
+	Models are classes to define tables in a database.
+	Models are source of information about your data.
+	Generally, each model map to a single database table.
+	Models have fields that are data of a table in database.
+	Models have values of tables. The Types of values can be given by fields.
+
+	Documentation: https://docs.djangoproject.com/en/3.1/topics/db/models/,
+		     https://docs.djangoproject.com/en/3.1/ref/models/(for reference)
+
+8. Migrations in Django:
+	Migrations are Django’s way of making changes you make to your models
+	(Adding a field, deleting a model, etc.) into our database.
+	To make change to database we need to first tell Django
+	that changes are made and create a new migration
+	based on the changes you have made to your models.
+	Then we need to apply them.
+	If migrations are modified then django asks you done before migrations 
+	in that there is no image or other and you need to add a default.
+
+	Documentation: https://docs.djangoproject.com/en/3.1/topics/migrations/
+
+9. Django Template Language:
+	Django has its own system of templates.
+	That can be used in html templates for various purposes.
+
+	Documentation: https://docs.djangoproject.com/en/3.1/ref/templates/language/
+
+10. Django Authentication & Authorization:
+	Why Use Django User Authentication?
+		It's better to use the existing built-in boilerplate than to reinvent the wheel.
+		The Django authentication system handles both authentication and authorization.
+		
+	Difference Between Authentication And Authorization:
+		Usually, the term authentication refers to both the task,
+		but there is a slight difference between these two terms.
+		Authentication verifies a user who they claim to be,
+		and authorization determines what an authenticated user is allowed to do.
+
+		Documentation: https://docs.djangoproject.com/en/3.1/topics/auth/default/
+
+    What has the Django authentication system got for us?
+        The auth system consists:
+            Users:
+                Permissions: Binary (Yes/No) flags designation whether a user may perform a certain task.
+                Groups: A generic way of applying labels and permissions to more than one user.
+                A configurable password hashing system.
+                Forms and view tool for logging in users or restricting content.
+                A pluggable backend system.
+
+        What is Not Included?
+            Django's authentication system aims to be very generic and
+            doesn't provide some features commonly found in web authentication systems.
+
+            Solutions for some of these common problems have been in third-party packages :
+                Password strength checking.
+                Throttling of login attempts.
+                Authentication against the third party.
+                Object-level permissions.

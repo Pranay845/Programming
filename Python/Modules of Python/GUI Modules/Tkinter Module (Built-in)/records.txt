@@ -1,0 +1,15 @@
+name of person:
+date of birth:
+age group:PY_VAR10
+height:
+weight:
+country living:
+city living:
+parents:
+ father:
+ mother:
+sibling:yes
+emailid:
+lid:
+yes
+emailid:ds

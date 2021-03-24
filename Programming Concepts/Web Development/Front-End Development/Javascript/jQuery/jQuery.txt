@@ -1,0 +1,25 @@
+This is a library of JavaScript which simplifies javascript functions.
+This makes the javascript functions easier and compact.
+
+1. jQuery Syntax
+$("selector").action(); // $ means jQuery
+
+    1. Types of selectors:
+        1. Element selector:
+            $("Element").action();
+
+        2. Id selector:
+            $("#Id").action();
+
+        3. Class selector:
+            $(".Class").action();
+
+    2. Other selectors:
+        1. All selector:
+            $("*").action();
+
+        2. Class of Element selector:
+            $('Element.Class').action();
+
+        3. Selector of Element selector:
+            $('Element:selector').action();

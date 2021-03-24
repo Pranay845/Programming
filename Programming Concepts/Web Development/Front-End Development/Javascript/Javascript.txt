@@ -1,0 +1,11 @@
+Javascript provides front end scripting for your website and is a high-level dynamic interpreted programming language.
+It is a text-based programming language used both on the client-side and server-side
+that allows you to make web pages interactive.
+It gives web pages interactive elements that engage a user.
+It is used in many fields like databases, games, servers etc.
+It is used to write logic in web pages like taking 
+live tweets from twitter it is used to bring dynamic data
+
+Nowadays JS is used in many fields not only web.
+
+JS has different frameworks like jQuery,Angular,React etc.
