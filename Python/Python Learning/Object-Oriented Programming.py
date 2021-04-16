@@ -62,13 +62,40 @@ These method is useful when you need to create attributes which can be used by o
 # SubTopic: Types of attributes (Variables)
 """
 There are three different types of variables in OOPs in python:
-    1. Instance variable (Object level variable)
-    2. Static variable (Class level variable)
-    3. Local variable (Method level variable)
+    1. Instance variable (These variables are created inside the init method with the self keyword.
+                          These variables can are different to each object and
+                          we can change the variable even outside the class.
+                          This is a Object level variable).
+                          
+    2. Static variable (These variables are directly created under a class as a normal variable.
+                        These variables will apply to every object made by the class
+                        These cannot be changed outside the class hence the name static (Always the same).
+                        This is a Class level variable).
+
+    3. Local variable (These variables are created in a method and only can used inside the method.
+                       This is a  Method level variable).
 """
 
 # SubTopic: Types of methods (Functions)
-""""""
+"""
+There are Three different types of Methods in OOPs in python:
+    1. Instance method (This method is used to work with the object.
+                        This method can only be used with a object.
+                        In instance methods there are two types of methods:
+                            They are accessor methods (These methods are used for accessing the objects attributes) and
+                            mutator methods (These are used to manipulate the object's attributes).
+                        Instance methods can be used with instance variable. In instance method we use self keyword).
+                        
+    2. Class method (This method is used to work with class variables.
+                     We pass only one argument which is not the self keyword and it's cls.
+                     This method can be called with the class name as it is a class method.
+                     To tell python, it's a class method we use a built-in decorator called classmethod).
+                     
+    3. Static method (This has nothing to do with class or instance variables.
+                      So, we don't pass any arguments to this method.
+                      To tell python, it's a static method we use a built-in decorator called staticmethod.
+                      This method works like a simple and a  plain function same like the functions outside the class).
+"""
 
 # SubTopic: Magic/Dunder methods
 """"""
