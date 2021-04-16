@@ -3,7 +3,7 @@
 Let's start by the Hello World! Program in python.
 """
 
-# TODO: Write code and explain wat is print in brief in comment
+# TODO: Write code and explain what is print in brief in comment
 # TODO: Mention we are doing in console upto print topic in a note
 
 # Topic: Variables
