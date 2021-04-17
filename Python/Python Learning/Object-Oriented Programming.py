@@ -169,9 +169,11 @@ as only child can inherit the parent but not viceversa.
 """
 Types of inheritance:
     1. Single-level inheritance (It means only one class(B) is inheriting from the other class(A)).
+    
     2. Multi level inheritance (It means one class(B) is inheriting from other class(A)
-                                then another class(C) would inherit the class(B))
-    3. Multiple inheritance (It means a class(C) inheriting from two parent/other classes(A,B))
+                                then another class(C) would inherit the class(B)).
+                                
+    3. Multiple inheritance (It means a class(C) inheriting from two parent/other classes(A,B)).
 
 In inheritance when we inherit a class(A) to a other class(B).
 When we execute B class then it find whether it has the init or
