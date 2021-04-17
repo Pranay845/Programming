@@ -42,7 +42,7 @@ when a object of it's class is created and executed.
 This is similar to constructors in other languages.
 
 Constructors are used to initialize or
-create attributes/variables in a class for the object and
+create attributes/variables in a class and the creation of the object and
 also these are responsible for the allocation of the object created by the class in the memory.
 We can also change the variables inside the class in outside of the class.
 These attributes created by the init method can be used inside the class.
@@ -98,27 +98,92 @@ There are Three different types of Methods in OOPs in python:
 """
 
 # SubTopic: Magic/Dunder methods
-""""""
+"""
+Dunder or magic methods in Python are the methods having
+two prefix and suffix underscores in the method name.
+Dunder here means “Double Under (Underscores)”.
+Few examples for magic methods are: 
+1. __init__
+2. __add__
+3. __len__
+4. __repr__ etc.
+"""
+
+# SubTopic: Inner class
+"""
+Inner class is a class made inside a another class.
+This is possible because executes line by line.
+To access the inner class we need to first write outer class than the inner class and
+then we can access the inner class.
+"""
 
 # Topic: Object
-""""""
+"""
+An Object is an instance of a Class.
+A class is like a blueprint while an instance
+is a copy of the class with actual values.
+An object consists of:
+1. State: It is represented by the attributes of an object.
+2. Behavior: It is represented by the methods of an object.
+"""
+
 # SubTopic: Object creation
-""""""
-
-# SubTopic: Calling an object's method
-""""""
-
-# SubTopic: Using methods
-""""""
+"""
+When a class is created then the design or blueprint
+is only ready then we need to initialize or create a object
+using constructors in python
+then we can access the methods created inside the
+class or mutate the object's attributes created using the init method.
+"""
 
 # SubTopic: Object introspection
-""""""
+"""
+Object introspection means to recognize the object
+along with all its details, such as id or location.
+One of the most basic ways to introspect is the type function.
+Types of introspects:
+    Some of the other common Introspects.           
+    1. hasattr(): It checks if an object has an attribute.
+    2. getattr(): It returns the contents of an attribute if there are some.
+    3. repr(): It returns the string representation of an object.
+    4. vars(): It checks all the instance variables of an object.
+    5. issubclass(): This function checks that if a specific class is a derived class of another class.
+    6. isinstance(): It checks if an object is an instance of a specific class. 
+    7. __doc__: This attribute gives some documentation about an object.
+    8. __name__: This attribute holds the name of the object.
+    9. callable(): This function checks if an object is a function.
+    10. help(): It checks what other functions do.
+"""
 
 # Topic: Inheritance
-""""""
+"""
+Inheritance means to define a class that inherits
+all the methods and properties from another class.
+Parent class is the class being inherited from, also called base class.
+Child class is the class that inherits from another class, also called derived class.
+We name these classes as parent and child because has they are the same in python as in real world
+as only child can inherit the parent but not viceversa.
+"""
 
 # SubTopic: Types of inheritance
-""""""
+"""
+Types of inheritance:
+    1. Single-level inheritance (It means only one class(B) is inheriting from the other class(A)).
+    2. Multi level inheritance (It means one class(B) is inheriting from other class(A)
+                                then another class(C) would inherit the class(B))
+    3. Multiple inheritance (It means a class(C) inheriting from two parent/other classes(A,B))
+
+In inheritance when we inherit a class(A) to a other class(B).
+When we execute B class then it find whether it has the init or
+any method if it has the method then will execute the class B method or
+if it does not have the method it will find the method in the parent class and then execute the method.
+If we have the same method in both parent and child class then if we want to execute both methods from
+both classes then we use a built-in function called "super" to represent the super/parent class.
+
+In multiple inheritance if we have the init or any other method in both parent classes(A,B) and
+these classes(A,B) inherited by a other class(C) then if we want execute than it will execute the method from
+first parent class from the left side because of MRO(Method Resolution Order), this order follows from left to right.
+"""
 
 # Topic: Polymorphism
 """"""
