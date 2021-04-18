@@ -61,7 +61,7 @@ These method is useful when you need to create attributes which can be used by o
 
 # SubTopic: Types of attributes (Variables)
 """
-There are three different types of variables in OOPs in python:
+There are three different types of variables in OOPs:
     1. Instance variable (These variables are created inside the init method with the self keyword.
                           These variables can are different to each object and
                           we can change the variable even outside the class.
@@ -78,7 +78,7 @@ There are three different types of variables in OOPs in python:
 
 # SubTopic: Types of methods (Functions)
 """
-There are Three different types of Methods in OOPs in python:
+There are Three different types of Methods in OOPs:
     1. Instance method (This method is used to work with the object.
                         This method can only be used with a object.
                         In instance methods there are two types of methods:
@@ -188,16 +188,55 @@ first parent class from the left side because of MRO(Method Resolution Order), t
 """
 
 # Topic: Polymorphism
-""""""
+"""
+Polymorphism means multiple forms.
+It means objects can have multiple forms
+as also real life we people change according to the situation.
+There are four ways of implementing polymorphism:
+    1. Duck typing
+    2. Operator overloading
+    3. Method overloading
+    4. Method overriding
+"""
 
 # SubTopic: Duck typing
-""""""
+"""
+The name Duck Typing comes from the phrase “If it looks like a duck and quacks like a duck, it’s a duck”.
+Where the type or the class of an object is less important than the method it defines.
+Using Duck Typing, We don't care about the class or the type of object created by the class.
+We just care about does the required method exists or not.
+"""
 
 # SubTopic: Operator overloading
-""""""
+"""
+Operator overloading means giving extended meaning beyond their predefined operational meaning.
+For example operator + is used to add two integers as well as join two strings and merge two lists.
+It is achievable because ‘+’ operator is overloaded by int class and str class.
+You might have noticed that the same built-in operator or function shows different behavior for objects
+of different classes.
+This is possible because python is object oriented so when we use operators
+these operators will call a class like for example '+' it calls __add__ method.
+So we add extra functionality to the method(__add__).
+This is called Operator overloading.
+"""
 
 # SubTopic: Method overloading and overriding
-""""""
+"""
+In python there is no method overloading because does not support it.
+The concept of method overloading is that we create two methods with the same name but
+both methods will have different number of parameters.
+Of course these methods will be in the same class.
+These is not supported because in python we can't create two methods with the same name but
+we have work-around or tricks to do method overloading.
+
+Method overriding means that when we have a class(B) inherits another class(A).
+If that class(B) does not have a required method and the another class(A) which is inherited,
+has the method automatically the method in another class(A) will be executed but
+the moment when we have the required method in that class(B) then it will execute the method inside that class(B)
+not the the method from another class(A) which is inherited.
+This means the method from another class(A) is overridden by the method from that class(B).
+This is called method overriding.
+"""
 
 # Topic: Abstraction
 """"""
