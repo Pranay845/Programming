@@ -168,14 +168,14 @@ as only child can inherit the parent but not viceversa.
 # SubTopic: Types of inheritance
 """
 Types of inheritance:
-    1. Single-level inheritance (It means only one class(B) is inheriting from the other class(A)).
+    1. Single-level inheritance (It means only child class(B) is inheriting from the parent class(A)).
     
-    2. Multi level inheritance (It means one class(B) is inheriting from other class(A)
-                                then another class(C) would inherit the class(B)).
+    2. Multi level inheritance (It means child class(B) is inheriting from parent class(A)
+                                then child class(C) would inherit the parent class(B)).
                                 
-    3. Multiple inheritance (It means a class(C) inheriting from two parent/other classes(A,B)).
+    3. Multiple inheritance (It means a child class(C) inheriting from two parent classes(A,B)).
 
-In inheritance when we inherit a class(A) to a other class(B).
+In inheritance when we inherit a parent class(A) to a child class(B).
 When we execute B class then it find whether it has the init or
 any method if it has the method then will execute the class B method or
 if it does not have the method it will find the method in the parent class and then execute the method.
@@ -183,7 +183,7 @@ If we have the same method in both parent and child class then if we want to exe
 both classes then we use a built-in function called "super" to represent the super/parent class.
 
 In multiple inheritance if we have the init or any other method in both parent classes(A,B) and
-these classes(A,B) inherited by a other class(C) then if we want execute than it will execute the method from
+parent classes(A,B) inherited by a child class(C) then if we want execute than it will execute the method from
 first parent class from the left side because of MRO(Method Resolution Order), this order follows from left to right.
 """
 
@@ -229,28 +229,31 @@ Of course these methods will be in the same class.
 These is not supported because in python we can't create two methods with the same name but
 we have work-around or tricks to do method overloading.
 
-Method overriding means that when we have a class(B) inherits another class(A).
-If that class(B) does not have a required method and the another class(A) which is inherited,
-has the method automatically the method in another class(A) will be executed but
-the moment when we have the required method in that class(B) then it will execute the method inside that class(B)
-not the the method from another class(A) which is inherited.
-This means the method from another class(A) is overridden by the method from that class(B).
+Method overriding means that when we have a child class(B) inherits parent class(A).
+If child class(B) does not have a required method and the parent class(A) which is inherited,
+has the method automatically the method in parent class(A) will be executed but
+the moment when we have the required method in child class(B) then it will execute the method inside a child class(B)
+not the the method from parent class(A) which is inherited.
+This means the method from parent class(A) is overridden by the method from the child class(B).
 This is called method overriding.
 """
 
-# Topic: Abstraction
-""""""
-
-# SubTopic: Abstract methods and classes
-""""""
+# Topic: Abstract methods and classes
+"""
+Abstract method is a method which only has declaration and doesn't have definition.
+It means it does not have any statements or body.
+A class is called an abstract class only if it has at least one abstract method.
+when you inherit a abstract class(A) to a child class(B),
+the child class(B) should define all the abstract method present in parent class.
+If it is not done then child class also becomes abstract class automatically.
+Abstraction is not directly built-in into python so we use a module named "abc".
+abc stands for Abstract Base Class by which we can make a class or method abstract.
+"""
 
 # Topic: Encapsulation
 """"""
 
-# Topic: Methods v/s Functions
-""""""
-
-# Topic: Access specifiers
+# SubTopic: Access specifiers
 """"""
 
 # Topic: Meta classes
