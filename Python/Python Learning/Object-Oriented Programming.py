@@ -10,7 +10,7 @@ but all of them need to follow some strategy when
 they are implemented and this methodology/strategy is paradigms.
 """
 
-# SubTopic: Object-oriented programming
+# SubTopic: Object-Oriented Programming
 """
 Any object in real life has characteristics.
 This is also illustrated in programming languages
@@ -35,7 +35,7 @@ A class is a blueprint or a design for a object that defines the it's attributes
 the methods (Functions in OOPs) common to all objects or instances  of a same design.
 """
 
-# SubTopic: __init__ method
+# SubTopic: __init__ Method
 """
 The __init__ method is a special method which is executed every time automatically
 when a object of it's class is created and executed.
@@ -59,7 +59,7 @@ These method is useful when you need to create attributes which can be used by o
 #  Then we use if statement and the compare method to compare objects
 #  because python does not know how to compare objects.
 
-# SubTopic: Types of attributes (Variables)
+# SubTopic: Types of Attributes (Variables)
 """
 There are three different types of variables in OOPs:
     1. Instance variable (These variables are created inside the init method with the self keyword.
@@ -76,7 +76,7 @@ There are three different types of variables in OOPs:
                        This is a  Method level variable).
 """
 
-# SubTopic: Types of methods (Functions)
+# SubTopic: Types of Methods (Functions)
 """
 There are Three different types of Methods in OOPs:
     1. Instance method (This method is used to work with the object.
@@ -97,19 +97,19 @@ There are Three different types of Methods in OOPs:
                       This method works like a simple and a  plain function same like the functions outside the class).
 """
 
-# SubTopic: Magic/Dunder methods
+# SubTopic: Magic/Dunder Methods
 """
 Dunder or magic methods in Python are the methods having
 two prefix and suffix underscores in the method name.
 Dunder here means “Double Under (Underscores)”.
-Few examples for magic methods are: 
+Few examples for magic methods are:
 1. __init__
 2. __add__
 3. __len__
 4. __repr__ etc.
 """
 
-# SubTopic: Inner class
+# SubTopic: Inner Class
 """
 Inner class is a class made inside a another class.
 This is possible because executes line by line.
@@ -127,7 +127,7 @@ An object consists of:
 2. Behavior: It is represented by the methods of an object.
 """
 
-# SubTopic: Object creation
+# SubTopic: Object Creation
 """
 When a class is created then the design or blueprint
 is only ready then we need to initialize or create a object
@@ -136,19 +136,19 @@ then we can access the methods created inside the
 class or mutate the object's attributes created using the init method.
 """
 
-# SubTopic: Object introspection
+# SubTopic: Object Introspection
 """
 Object introspection means to recognize the object
 along with all its details, such as id or location.
 One of the most basic ways to introspect is the type function.
 Types of introspects:
-    Some of the other common Introspects.           
+    Some of the other common Introspects.
     1. hasattr(): It checks if an object has an attribute.
     2. getattr(): It returns the contents of an attribute if there are some.
     3. repr(): It returns the string representation of an object.
     4. vars(): It checks all the instance variables of an object.
     5. issubclass(): This function checks that if a specific class is a derived class of another class.
-    6. isinstance(): It checks if an object is an instance of a specific class. 
+    6. isinstance(): It checks if an object is an instance of a specific class.
     7. __doc__: This attribute gives some documentation about an object.
     8. __name__: This attribute holds the name of the object.
     9. callable(): This function checks if an object is a function.
@@ -165,14 +165,14 @@ We name these classes as parent and child because has they are the same in pytho
 as only child can inherit the parent but not viceversa.
 """
 
-# SubTopic: Types of inheritance
+# SubTopic: Types of Inheritance
 """
 Types of inheritance:
     1. Single-level inheritance (It means only child class(B) is inheriting from the parent class(A)).
     
     2. Multi level inheritance (It means child class(B) is inheriting from parent class(A)
                                 then child class(C) would inherit the parent class(B)).
-                                
+
     3. Multiple inheritance (It means a child class(C) inheriting from two parent classes(A,B)).
 
 In inheritance when we inherit a parent class(A) to a child class(B).
@@ -199,7 +199,7 @@ There are four ways of implementing polymorphism:
     4. Method overriding
 """
 
-# SubTopic: Duck typing
+# SubTopic: Duck Typing
 """
 The name Duck Typing comes from the phrase “If it looks like a duck and quacks like a duck, it’s a duck”.
 Where the type or the class of an object is less important than the method it defines.
@@ -207,7 +207,7 @@ Using Duck Typing, We don't care about the class or the type of object created b
 We just care about does the required method exists or not.
 """
 
-# SubTopic: Operator overloading
+# SubTopic: Operator Overloading
 """
 Operator overloading means giving extended meaning beyond their predefined operational meaning.
 For example operator + is used to add two integers as well as join two strings and merge two lists.
@@ -220,7 +220,7 @@ So we add extra functionality to the method(__add__).
 This is called Operator overloading.
 """
 
-# SubTopic: Method overloading and overriding
+# SubTopic: Method Overloading and Overriding
 """
 In python there is no method overloading because does not support it.
 The concept of method overloading is that we create two methods with the same name but
@@ -238,7 +238,7 @@ This means the method from parent class(A) is overridden by the method from the 
 This is called method overriding.
 """
 
-# Topic: Abstract methods and classes
+# Topic: Abstract Methods and Classes
 """
 Abstract method is a method which only has declaration and doesn't have definition.
 It means it does not have any statements or body.
@@ -251,13 +251,42 @@ abc stands for Abstract Base Class by which we can make a class or method abstra
 """
 
 # Topic: Encapsulation
-""""""
+"""
+Encapsulation means the idea of wrapping data and the methods that work on data within one unit.
+This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data.
+To prevent accidental change, an object’s variable can only be changed by an object’s method.
+"""
 
-# SubTopic: Access specifiers
-""""""
+# SubTopic: Access Modifiers
+"""
+Encapsulation is achieved by using access modifiers.
+There are three forms of access modifiers:
+    1. Public (The members(Variables and Methods) of a class that are declared public are easily accessible
+               from any part of the program.
+               All data members and member functions of a class are public by default).
+               
+    2. Protected (The members of a class that are declared protected are only accessible to a class derived from it.
+                  Data members of a class are declared protected by adding a single underscore ‘_’ symbol
+                  before the data member of that class).
+                  
+    3. Private (The members of a class that are declared private are accessible within the class only,
+                private access modifier is the most secure access modifier.
+                Data members of a class are declared private by adding a double underscore ‘__’
+                symbol before the data member of that class).
+"""
 
-# Topic: Meta classes
-""""""
-
-# SubTopic: Type class
-""""""
+# Topic: Meta Classes (Type Class)
+"""
+Has in python, everything is a object than that means
+a Class is also an object, and just like any other object, it’s a instance of something called Metaclass.
+A special class type creates these Class object.
+The type class is default metaclass which is responsible for making classes.
+For example in above example if we try to find out the type of Student class, it comes out to be a type.
+Because Classes are also an object, they can be modified in same way.
+We can add or subtract fields or methods in class in same way we did with other objects.
+Metaclass create Classes and Classes creates objects.
+Metaclass is responsible for generation of classes,
+so we can write our own custom metaclasses to modify the way classes are
+generated by performing extra actions or injecting code.
+Usually we do not need custom metaclasses but sometime it’s necessary.
+"""

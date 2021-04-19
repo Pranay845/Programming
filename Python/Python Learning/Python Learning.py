@@ -14,7 +14,7 @@ in our home which have something in it
 and we keep a label on it.
 """
 
-# SubTopic: Data types of Variables
+# SubTopic: Data Types of Variables
 """
 There are types of variables depend upon the data they store,
 like in our home we keep food in one box
@@ -94,7 +94,7 @@ We can use operators with variables in many ways
 like adding values etc which are stored in variables.
 """
 
-# Topic: Print statement
+# Topic: Print Statement
 """
 In above code we saw something print.
 Let's see what is it actually.
@@ -514,7 +514,7 @@ When the input is given to a function it is called as a argument.
 There are different types of parameters.
 """
 
-# SubTopic: Pass by value or reference
+# SubTopic: Pass by Value or Reference
 """
 Pass by value means we are passing the value of the variable
 not the variable itself so it would use a different memory location.
@@ -545,7 +545,7 @@ These are called as optional parameters.
 """
 Normally we make variables inside a function and also outside a function.
 This is were Scope comes into play
-if we make the same variables inside and outside a function 
+if we make the same variables inside and outside a function
 so then the outside one is called as a global variable which can accessed from anywhere in a file
 the inside one is called as local variable which can be accessed only inside that particular function.
 To use a global variable inside a function we use the keyword called as global.
@@ -586,10 +586,10 @@ We can achieve decorators in few ways.
 """
 Generators are functions with yield keyword instead of return keyword.
 yield is used to generate a value at a time.
-It is used in some scenarios like handling large datasets where we will work only on a single dataset
+It is used in some scenarios like handling large datasets where we will work only on a single dataset.
 """
 
-# Topic: Modular programming
+# Topic: Modular Programming
 """
 Modular programming is a way to write code and organize it.
 This is very useful for maintenance of code and many other benefits.
@@ -624,7 +624,7 @@ Packages are simply a directory of python files with init.py file.
 init.py is there to tell python this directory as a package.
 """
 
-# SubTopic: Types of modules
+# SubTopic: Types of Modules
 """
 There are two types of modules.
 They are:
@@ -632,7 +632,7 @@ They are:
 2. Created modules
 """
 
-# SubTopic: Created modules
+# SubTopic: Created Modules
 """
 Created modules are modules which we create by ourself.
 Any python file is called a module.
@@ -648,7 +648,7 @@ It is used for installing third-party modules or packages
 created by other developers which help us for various purposes.
 """
 
-# SubTopic: Module installation
+# SubTopic: Module Installation
 """
 To install a module:
 1. We open the terminal or powershell
@@ -676,7 +676,7 @@ Script is a runnable code like adding two numbers etc.
 But modules can also have runnable code.
 """
 
-# SubTopic: Special variable __name__
+# SubTopic: Special Variable __name__
 """
 A special variable __name__ is to determine
 whether a module is the main module or not.
@@ -727,7 +727,7 @@ This exception does not stop the execution of the program,
 however, it changes the flow of the program.
 """
 
-# SubTopic: Types of errors
+# SubTopic: Types of Errors
 """
 There are three types of errors.
 They are:
@@ -750,7 +750,7 @@ except keyword is used to manipulate the error.
 finally is used to complete the error like closing a file.
 """
 
-# SubTopic: Raising exceptions
+# SubTopic: Raising Exceptions
 """
 Sometimes we know a error can occur so we raise exceptions to handle it
 in such a way that user could understand like popping a message etc.
@@ -764,9 +764,9 @@ First we need to open a file, play with it and close the file.
 There are four types of modes to open a file.
 They are:
 1. "r" for reading.
-2. "w"  for writing.
-3.  a"  for appending.
-4. "r+"  for both reading and writing
+2. "w" for writing.
+3. "a" for appending.
+4. "r+" for both reading and writing
 We can also create files.
 """
 
