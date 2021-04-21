@@ -3,8 +3,8 @@
 Let's start by the Hello World! Program in python.
 """
 
-# TODO: Write code and explain what is print in brief in comment
-# TODO: Mention we are doing in console upto print topic in a note
+print("Hello World!")  # print simply means we are telling python show something in a console.
+# Note: We are executing this code in IDLE.
 
 # Topic: Variables
 """
@@ -45,7 +45,7 @@ They are:
     7. Range
 """
 
-# TODO: Write a note of the advanced data types like bytearray
+# Note: There are some advanced data types like bytearray
 
 # SubTopic: Typecasting
 """
