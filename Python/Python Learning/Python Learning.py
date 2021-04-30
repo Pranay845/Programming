@@ -14,6 +14,13 @@ in our home which have something in it
 and we keep a label on it.
 """
 
+number = 5
+
+name = "name"
+
+print(number)
+print(name)
+
 # SubTopic: Data Types of Variables
 """
 There are types of variables depend upon the data they store,
@@ -45,6 +52,18 @@ They are:
     7. Range
 """
 
+a = 5
+
+b = 2.0
+
+c = 1 + 2j
+
+d = True
+
+e = False
+
+f = "name"
+
 # Note: There are some advanced data types like bytearray
 
 # SubTopic: Typecasting
@@ -54,12 +73,32 @@ In variables typecasting is about converting from one data type to another.
 This is done by it's corresponding functions like str, int etc.
 """
 
+# integer
+n = 100
+
+# float
+f = float(n)
+print(f)
+print(type(f))
+
+# string
+s = str(n)
+print(s)
+print(type(s))
+
 # SubTopic: Swapping Variables
 """
 We can swap variables in programming
 but it is a bit difficult in other programming
 languages in python it is easy to swap variables.
 """
+
+x = 5
+y = 10
+
+x, y = y, x
+print("x =", x)
+print("y =", y)
 
 # SubTopic: Id’s of Variables
 """
@@ -68,6 +107,12 @@ When the data is stored in computer
 it should be identified by the computer 
 so every variable has a id different then it's name.
 """
+
+str1 = "geek"
+print(id(str1))
+
+str2 = "geek"
+print(id(str2))
 
 # SubTopic: Rules of Variables
 """
@@ -88,11 +133,36 @@ In programming they are the same as in math but they do
 operations on many operands etc.
 """
 
+x = 15
+y = 4
+print(x + y)
+
 # SubTopic: How to use operators with variables
 """
 We can use operators with variables in many ways
 like adding values etc which are stored in variables.
 """
+
+x = 15
+y = 4
+
+# Output: x + y = 19
+print('x + y =', x + y)
+
+# Output: x - y = 11
+print('x - y =', x - y)
+
+# Output: x * y = 60
+print('x * y =', x * y)
+
+# Output: x / y = 3.75
+print('x / y =', x / y)
+
+# Output: x // y = 3
+print('x // y =', x // y)
+
+# Output: x ** y = 50625
+print('x ** y =', x ** y)
 
 # Topic: Print Statement
 """
@@ -106,16 +176,23 @@ print is used to show something on console (Where output is shown to us).
 It can be manipulated with different ways by using special characters.
 """
 
+print(5)
+
 # SubTopic: \n New Line
 """
 \n is a special character which is used to show output in a new line.
 """
+
+print("Hello\nWorld!")
 
 # SubTopic: end=""
 """
 end="" is used to show output in the same line with or without a
 character after each line.
 """
+
+print("hello", end="")
+print("hello")
 
 # SubTopic: Variables and print
 """
@@ -124,6 +201,24 @@ So we can use print to show our output with variables.
 we can also print different data types like a string and a integer
 which is stored in a variable.
 """
+
+a = 5
+print(a)
+
+b = 2.0
+print(b)
+
+c = 1 + 2j
+print(c)
+
+d = True
+print(d)
+
+e = False
+print(e)
+
+f = "name"
+print(f)
 
 # Topic: Strings
 """
@@ -358,7 +453,6 @@ When there is a loop inside a loop (Irrespective of which loop it is) is called 
 These nested loops can both while and for loops together.
 We can also be make infinite nested loops.
 """
-
 
 # SubTopic: Range
 """
