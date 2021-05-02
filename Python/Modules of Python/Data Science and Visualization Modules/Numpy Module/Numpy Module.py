@@ -90,7 +90,7 @@ print(ef)
 fg = np.dot(y, z)
 print(fg)
 
-gh = np.sums(y)
+gh = np.sum(y)
 print(gh)
 
 hi = np.max(y)
@@ -131,10 +131,10 @@ print(n)
 m.flat  # flats the array
 print(m)
 
-m = np.sums(m, axis=1)  # add all columns in array
+m = np.sum(m, axis=1)  # add all columns in array
 print(m)
 
-m = np.sums(m, axis=0)  # add all rows in array
+m = np.sum(m, axis=0)  # add all rows in array
 print(m)
 
 no = np.array([[1, 3, 4], [5, 6, 8]])
