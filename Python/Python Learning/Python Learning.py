@@ -49,7 +49,9 @@ They are:
     
     6. Array
 
-    7. Range
+    7. Range (range(start: An integer number specifying at which position to start.,
+     stop: An integer number specifying at which position to stop,
+     step: An integer number specifying the incrementation.))
 """
 
 a = 5
@@ -63,6 +65,8 @@ d = True
 e = False
 
 f = 'name'
+
+m = range(10)
 
 # Note: There are some advanced data types like bytearray
 
@@ -640,11 +644,23 @@ if is a keyword used for determining whether a condition is true or false.
 If the condition is true then only it shall execute the following statements.
 """
 
+a = 33
+b = 200
+if b > a:
+    print('b is greater than a')
+
 # SubTopic: If, Else
 """
 else is another keyword which tells python to try this condition
 if the previous condition was false.
 """
+
+a = 200
+b = 33
+if b > a:
+    print('b is greater than a')
+else:
+    print('a is greater than b')
 
 # SubTopic: If, Elif, Else
 """
@@ -653,6 +669,15 @@ if the previous if condition is false.
 We can use as many as if's, elif's or else we want but they should follow a order of if, elif, else.
 """
 
+a = 200
+b = 33
+if b > a:
+    print('b is greater than a')
+elif a == b:
+    print('a and b are equal')
+else:
+    print('a is greater than b')
+
 # SubTopic: Nested If Statements
 """
 When we have if, elif, else inside if or elif or else than these are called as nested statements.
@@ -660,6 +685,15 @@ We can use them randomly with following the order.
 We can also be make infinite nested statements.
 We can also make infinite if, elif, else
 """
+
+num = float(input('Enter a number: '))
+if num >= 0:
+    if num == 0:
+        print('Zero')
+    else:
+        print('Positive number')
+else:
+    print('Negative number')
 
 # Topic: Repetition Control Flow
 """
@@ -677,11 +711,19 @@ for loop is for iterating (repeating a operation) a sequence like a string etc.
 With for loop we can execute many operations for each value in a sequence.
 """
 
+for i in range(10):
+    print(i)
+
 # SubTopic: for, else
 """
 We can use for, else together in python in some scenarios like iterating a sequence to check a condition
 and if it is not true then do another operation only once.
 """
+
+for x in range(6):
+    print(x)
+else:
+    print('Finally finished!')
 
 # SubTopic: while Loop
 """
@@ -689,12 +731,50 @@ while loop will execute a block of statements repeatedly until the condition is 
 If the condition becomes false it will stop.
 """
 
+"""
+Program to add natural
+numbers up to
+sum = 1+2+3+...+n
+"""
+
+# To take input from the user,
+# n = int(input("Enter n: "))
+
+n = 10
+
+# initialize sum and counter
+sums = 0
+i = 1
+
+while i <= n:
+    sums = sums + i
+    i = i + 1  # update counter
+
+# print the sum
+print('The sum is', sums)
+
+'''Example to illustrate
+the use of else statement
+with the while loop'''
+
+counter = 0
+
+while counter < 3:
+    print('Inside loop')
+    counter = counter + 1
+else:
+    print('Inside else')
+
 # SubTopic: Nested Loops
 """
 When there is a loop inside a loop (Irrespective of which loop it is) is called as nested loops.
 These nested loops can both while and for loops together.
 We can also be make infinite nested loops.
 """
+
+for x in range(10):
+    for i in range(10):
+        print(i)
 
 # SubTopic: Range
 """
@@ -709,6 +789,40 @@ break, continue, pass are keywords used mainly in loops.
 2. continue means leave this iteration and go to the next iteration.
 3. pass means there are no statements here, skip it. pass can also be used with if, elif, else statements.
 """
+
+# break
+"""
+Use of break statement inside the loop
+"""
+
+for val in 'string':
+    if val == 'i':
+        break
+    print(val)
+
+print('The end')
+
+# continue
+"""
+Program to show the use of continue statement inside loops
+"""
+
+for val in 'string':
+    if val == 'i':
+        continue
+    print(val)
+
+print('The end')
+
+# pass
+"""
+pass is just a placeholder for
+functionality to be added later.
+"""
+
+sequence = {'p', 'a', 's', 's'}
+for val in sequence:
+    pass
 
 # Topic: Python collections
 """
