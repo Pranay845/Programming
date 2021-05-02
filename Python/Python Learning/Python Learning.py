@@ -623,6 +623,7 @@ data types like a number with a string.
 
 # v = 'hello' + 5
 # print(v)
+
 # Note: This code does not work
 
 # Topic: Decision Control Flow
