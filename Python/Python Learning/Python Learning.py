@@ -3,7 +3,7 @@
 Let's start by the Hello World! Program in python.
 """
 
-print("Hello World!")  # print simply means we are telling python show something in a console.
+print('Hello World!')  # print simply means we are telling python show something in a console.
 # Note: We are executing this code in IDLE.
 
 # Topic: Variables
@@ -16,7 +16,7 @@ and we keep a label on it.
 
 number = 5
 
-name = "name"
+name = 'name'
 
 print(number)
 print(name)
@@ -62,7 +62,7 @@ d = True
 
 e = False
 
-f = "name"
+f = 'name'
 
 # Note: There are some advanced data types like bytearray
 
@@ -97,8 +97,8 @@ x = 5
 y = 10
 
 x, y = y, x
-print("x =", x)
-print("y =", y)
+print('x =', x)
+print('y =', y)
 
 # SubTopic: Id’s of Variables
 """
@@ -108,10 +108,10 @@ it should be identified by the computer
 so every variable has a id different then it's name.
 """
 
-str1 = "geek"
+str1 = 'geek'
 print(id(str1))
 
-str2 = "geek"
+str2 = 'geek'
 print(id(str2))
 
 # SubTopic: Rules of Variables
@@ -183,16 +183,16 @@ print(5)
 \n is a special character which is used to show output in a new line.
 """
 
-print("Hello\nWorld!")
+print('Hello\nWorld!')
 
 # SubTopic: end=""
 """
-end="" is used to show output in the same line with or without a
+end='' is used to show output in the same line with or without a
 character after each line.
 """
 
-print("hello", end="")
-print("hello")
+print('hello', end='')
+print('hello')
 
 # SubTopic: Variables and print
 """
@@ -217,7 +217,7 @@ print(d)
 e = False
 print(e)
 
-f = "name"
+f = 'name'
 print(f)
 
 # Topic: Strings
@@ -225,11 +225,42 @@ print(f)
 Strings are a sequence of characters in single, double and triple quotes ('', "", """""").
 """
 
+a = 'Hello'
+print(a)
+
 # SubTopic: String Functions
 """
 Functions are like actions on something like changing or checking the value etc.
 So then string functions are something which are used to manipulate or check the value of a string.
 """
+
+# len
+a = 'Hello, World!'
+print(len(a))
+
+# Check String
+txt = 'The best things in life are free!'
+print('free' in txt)
+
+# Check if NOT
+txt = 'The best things in life are free!'
+print('expensive' not in txt)
+
+# Accessing string characters in Python
+string = 'programmer'
+print('str = ', string)
+
+# first character
+print('str[0] = ', string[0])
+
+# last character
+print('str[-1] = ', string[-1])
+
+# slicing 2nd to 5th character
+print('str[1:5] = ', string[1:5])
+
+# slicing 6th to 2nd last character
+print('str[5:-2] = ', string[5:-2])
 
 # SubTopic: f Strings
 """
@@ -237,17 +268,31 @@ If we want show variables in between strings we use f strings.
 These are special type of string to show variables with strings.
 """
 
+val = 'Geeks'
+print(f'{val}for{val} is a portal for {val}.')
+
+name = 'name'
+age = 23
+print(f'Hello, My name is {name} and I\'m {age} years old.')
+
 # SubTopic: Doc Strings
 """
 Doc strings are another special type of string which is written in triple quotes for documentation.
 These are also called as multi line comments.
 """
 
+a = """Lorem ipsum 
+dolor sit amet"""
+print(a)
+
 # SubTopic: Raw Strings
 """
 Raw strings are also a special type of string used to show raw format of a string like
 if we keep a special character in between a string then to skip it we use raw strings.
 """
+
+s = r'Hi\nHello'
+print(s)
 
 # SubTopic: Single, Double, Triple quotes
 """
@@ -256,6 +301,18 @@ Double quotes are used when there is a single quote in between a string but we c
 Triple quotes are for writing doc strings or if there is single and double quotes in a string.
 """
 
+# Single Quotes
+a = 'Hello'
+print(a)
+
+# Double Quotes
+a = "Hello"
+print(a)
+
+# Triple Quotes
+a = """Hello"""
+print(a)
+
 # Topic: Inputs
 """
 When we need to interact with a user we take inputs.
@@ -263,6 +320,18 @@ Inputs are values given or taken by a user.
 By default inputs come in a string format
 but we can change the data type by typecasting.
 """
+
+val = input('Enter your value: ')
+print(val)
+
+num = input('Enter number :')
+print(num)
+name1 = input('Enter name : ')
+print(name1)
+
+# Printing type of input value
+print('type of number', type(num))
+print('type of name', type(name1))
 
 # Topic: More on Operators
 """
@@ -290,10 +359,34 @@ Types of arithmetic operators:
     2. Subtraction (-)
     3. Multiplication (*)
     4. Division (/)
-    5. Floor Division (//)
-    6. Modulus (%)
+    5. Floor Division (// (Returns the integral part of the quotient.))
+    6. Modulus (% (Returns the reminder of division))
     7. Exponent (**)
 """
+
+x = 15
+y = 4
+
+# Output: x + y = 19
+print('x + y =', x + y)
+
+# Output: x - y = 11
+print('x - y =', x - y)
+
+# Output: x * y = 60
+print('x * y =', x * y)
+
+# Output: x / y = 3.75
+print('x / y =', x / y)
+
+# Output: x // y = 3
+print('x // y =', x // y)
+
+# Output: x ** y = 3
+print('x ** y =', x % y)
+
+# Output: x ** y = 50625
+print('x ** y =', x ** y)
 
 # SubTopic: Relational Operators
 """
@@ -308,31 +401,94 @@ Types of relational operators:
     6. Less than or equal to (<=)
 """
 
+x = 10
+y = 12
+
+# Output: x > y is False
+print('x > y is', x > y)
+
+# Output: x < y is True
+print('x < y is', x < y)
+
+# Output: x == y is False
+print('x == y is', x == y)
+
+# Output: x != y is True
+print('x != y is', x != y)
+
+# Output: x >= y is False
+print('x >= y is', x >= y)
+
+# Output: x <= y is True
+print('x <= y is', x <= y)
+
 # SubTopic: Logical Operators
 """
 Logical operators perform Logical operations like checking true or false.
 Types of logical operators:
-    1. Logical AND (and)
-    2. Logical OR (or)
-    3. Logical NOT (not)
+    1. Logical AND (and: True if both the operands are true)
+    2. Logical OR (or: True if either of the operands is true)
+    3. Logical NOT (not: True if operand is false (complements the operand))
 """
+
+x = True
+y = False
+
+print('x and y is', x and y)
+
+print('x or y is', x or y)
+
+print('not x is', not x)
 
 # SubTopic: Unary Operator
 """
 Unary operator is to fetch a negative value of a number.
 """
 
+p = 9
+print(-p)
+
 # SubTopic: Bitwise Operators
 """
 Bitwise operators are operators which do operations on bits.
 Types of bitwise operators:
-    1. Bitwise AND (&)
-    2. Bitwise OR (|)
-    3. Bitwise NOT (~)
-    4. Bitwise XOR (^)
-    5. Bitwise Left Shift (<<)
-    6. Bitwise Right Shift (>>)
+    1. Bitwise AND (&: Sets each bit to 1 if both bits are 1)
+    2. Bitwise OR (|: Sets each bit to 1 if one of two bits is 1)
+    3. Bitwise NOT (~: Inverts all the bits)
+    4. Bitwise XOR (^: Sets each bit to 1 if only one of two bits is 1)
+    5. Bitwise Left Shift (<<: Shift left by pushing zeros in from the right and let the leftmost bits fall off)
+    6. Bitwise Right Shift (>>: Shift right by pushing copies of the leftmost bit in from the left,
+                            and let the rightmost bits fall off)
 """
+
+a = 10
+b = 4
+
+# Print bitwise AND operation
+print('a & b =', a & b)
+
+# Print bitwise OR operation
+print('a | b =', a | b)
+
+# Print bitwise NOT operation
+print('~a =', ~a)
+
+# print bitwise XOR operation
+print('a ^ b =', a ^ b)
+
+a = 10
+b = -10
+
+# print bitwise right shift operator
+print('a >> 1 =', a >> 1)
+print('b >> 1 =', b >> 1)
+
+a = 5
+b = -10
+
+# print bitwise left shift operator
+print('a << 1 =', a << 1)
+print('b << 1 =', b << 1)
 
 # SubTopic: Assignment Operators
 """
@@ -353,6 +509,45 @@ Types of Assignment operators:
     13. Bitwise Right Shift and Assign (<<=)
 """
 
+x = 5  # x = 5
+print(x),
+
+x += 5  # x = x + 5
+print(x)
+
+x -= 5  # x = x - 5
+print(x)
+
+x *= 5  # x = x * 5
+print(x)
+
+x /= 5  # x = x / 5
+print(x)
+
+x %= 5  # x = x % 5
+print(x)
+
+x //= 5  # x = x // 5
+print(x)
+
+x **= 5  # x = x ** 5
+print(x)
+
+x &= 5  # x = x & 5
+print(x)
+
+x |= 5  # x = x | 5
+print(x)
+
+x ^= 5  # x = x ^ 5
+print(x)
+
+x >>= 5  # x = x >> 5
+print(x)
+
+x <<= 5  # x = x << 5
+print(x)
+
 # SubTopic: Special Operators
 """
 Types of special operators:
@@ -365,17 +560,59 @@ Types of special operators:
         2. not in
 """
 
+# Identity operators
+x1 = 5
+y1 = 5
+x2 = 'Hello'
+y2 = 'Hello'
+x3 = [1, 2, 3]
+y3 = [1, 2, 3]
+
+# Output: False
+print(x1 is not y1)
+
+# Output: True
+print(x2 is y2)
+
+# Output: False
+print(x3 is y3)
+
+# Membership operators
+x = 'Hello world'
+y = {1: 'a', 2: 'b'}
+
+# Output: True
+print('H' in x)
+
+# Output: True
+print('hello' not in x)
+
+# Output: True
+print(1 in y)
+
+# Output: False
+print('a' in y)
+
 # SubTopic: Numeric Conversion
 """
 In python there are four types of number system.
 They are:
     1. Decimal (Base 10, 0-9)
-    2. Octal (Base 8, 0-7)
-    3. Hexadecimal (Base 16, 0-7 a-f)
-    4. Binary (Base 2, 0-1)
+    2. Octal (Base 8, 0-7, prefix: 0o)
+    3. Hexadecimal (Base 16, 0-7 a-f, prefix: 0x)
+    4. Binary (Base 2, 0-1, prefix: 0b)
 
 There are different functions to convert a number from one system to another.
 """
+
+# Octal (Base 8, 0-7)
+oct(25)
+
+# Hexadecimal (Base 16, 0-7 a-f)
+hex(23)
+
+# Binary (Base 2, 0-1)
+bin(23)
 
 # SubTopic: Errors of Operators
 """
@@ -383,6 +620,10 @@ When dealing operators we can get errors in code.
 Many errors come because we might perform operations on different
 data types like a number with a string.
 """
+
+# v = 'hello' + 5
+# print(v)
+# Note: This code does not work
 
 # Topic: Decision Control Flow
 """
