@@ -846,11 +846,51 @@ It is mutable (After making it we can change it).
 It is iterable.
 """
 
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)
+
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+list4 = ["abc", 34, True, 40, "male"]
+
 # SubTopic: Functions of List
 """
 There are many functions of list like append, pop etc.
 These functions can only used on lists and some of them can be used on any data types.
 """
+
+# len
+cars = ['Ford', 'BMW', 'Volvo']
+len(cars)
+
+# append
+fruits = ['apple', 'banana', 'cherry']
+fruits.append("orange")
+
+# clear
+fruits = ['apple', 'banana', 'cherry', 'orange']
+fruits.clear()
+
+# extend
+fruits = ['apple', 'banana', 'cherry']
+cars = ['Ford', 'BMW', 'Volvo']
+fruits.extend(cars)
+
+# pop
+fruits = ['apple', 'banana', 'cherry']
+fruits.pop(1)
+
+# insert
+fruits = ['apple', 'banana', 'cherry']
+fruits.insert(1, "orange")
+
+# sort
+cars = ['Ford', 'BMW', 'Volvo']
+cars.sort()
 
 # SubTopic: List Comprehension
 """
@@ -862,6 +902,23 @@ We can make a for or while loop with if statements inside a list.
 This is called as list comprehension.
 """
 
+# Without list comprehension
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+    if "a" in x:
+        newlist.append(x)
+
+print(newlist)
+
+# With list comprehension
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+print(newlist)
+
+# Note: syntax: newlist = [expression for item in iterable if condition == True]
+
 # SubTopic: Tuple
 """
 Tuple is also a collection of values written inside parenthesis ( () ) separated by commas ( , )
@@ -870,12 +927,37 @@ because of immutability there is no tuple comprehension.
 In other ways tuple is quite similar to list.
 """
 
+mytuple = ("apple", "banana", "cherry")
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+print(thistuple)
+
+thistuple = ("apple",)
+print(type(thistuple))
+
+# NOT a tuple
+thistuple = ('apple')
+print(type(thistuple))
+
 # SubTopic: Functions of Tuple
 """
 There are many functions of tuple.
 Because tuple is immutable there fewer functions like append
 compared to other data types.
 """
+
+# count
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.count(5)
+print(x)
+
+# index
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.index(8)
+print(x)
 
 # SubTopic: Set
 """
@@ -886,6 +968,19 @@ We use sets in some scenarios instead of list because set is highly optimized me
 for checking whether a specific element is present.
 """
 
+myset = {"apple", "banana", "cherry"}
+
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+
+# Note: Sets are unordered,
+#  so you cannot be sure in which order the items will appear.
+
+thisset = {"apple", "banana", "cherry", "apple"}
+print(thisset)
+
+# Note: Duplicate values will be ignored
+
 # SubTopic: Functions of Set
 """
 There are many functions in set.
@@ -893,11 +988,66 @@ Because set is unordered there fewer functions like index
 compared to other data types.
 """
 
+# add
+fruits = {"apple", "banana", "cherry"}
+fruits.add("orange")
+print(fruits)
+
+# clear
+fruits = {"apple", "banana", "cherry"}
+fruits.clear()
+print(fruits)
+
+# difference
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.difference(y)
+print(z)
+
+# intersection
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.intersection(y)
+print(z)
+
+# pop
+fruits = {"apple", "banana", "cherry"}
+fruits.pop()
+print(fruits)
+
+# remove
+fruits = {"apple", "banana", "cherry"}
+fruits.remove("banana")
+print(fruits)
+
+# update
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.update(y)
+print(x)
+
 # SubTopic: Set Comprehension
 """
 Like list comprehensions we also have set comprehensions
 but result would be unordered because it is a set.
 """
+
+# Without set comprehension
+input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
+output_set = set()
+
+# Using loop for constructing output set
+for var in input_list:
+    if var % 2 == 0:
+        output_set.add(var)
+
+print("Output Set using for loop:", output_set)
+
+# With Set comprehensions
+# for constructing output set
+input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
+set_using_comp = {var for var in input_list if var % 2 == 0}
+print("Output Set using set comprehensions:", set_using_comp)
 
 # SubTopic: Dictionary
 """
@@ -913,6 +1063,34 @@ It is also called as mapping type because we map values to keys.
 It is like a mixture of set and list with key, value pair
 """
 
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(thisdict)
+
+# Note:As of Python version 3.7, dictionaries are ordered.
+#  In Python 3.6 and earlier, dictionaries are unordered.
+
+# Dictionary Items
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(thisdict["brand"])
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+#   "year": 2020
+# }
+# print(thisdict)
+
+# Note: Duplicate values will overwrite existing values
+
 # SubTopic: Functions of Dictionary
 """
 There are many functions in dictionary.
@@ -920,13 +1098,102 @@ Because dictionary is mapping type there few extra functions like keys
 compared to other data types.
 """
 
+# len
+print(len(thisdict))
+
+# clear
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+car.clear()
+print(car)
+
+# fromkeys
+x = ('key1', 'key2', 'key3')
+y = 0
+thisdict = dict.fromkeys(x, y)
+print(thisdict)
+
+# get
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = car.get("model")
+print(x)
+
+# items
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = car.items()
+print(x)
+
+# pop
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+car.pop("model")
+print(car)
+
+# values
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = car.values()
+print(x)
+
+# Subtopic: Nested Dictionaries
+"""
+A dictionary can contain dictionaries,
+this is called nested dictionaries.
+"""
+
+myfamily = {
+    "child1": {
+        "name": "Emil",
+        "year": 2004
+    },
+    "child2": {
+        "name": "Tobias",
+        "year": 2007
+    },
+    "child3": {
+        "name": "Linus",
+        "year": 2011
+    }
+}
+
 # SubTopic: Dictionary Comprehension
 """
 Like set comprehension we also have dictionary comprehension
 but it is quite different then set comprehension because of key, value pair.
 """
 
-# SubTopic: Typecasting in Collections
+# Dictionary comprehension
+
+# Lists to represent keys and values
+keys = ['a', 'b', 'c', 'd', 'e']
+values = [1, 2, 3, 4, 5]
+
+# but this line shows dict comprehension here
+myDict = {k: v for (k, v) in zip(keys, values)}
+
+# We can use below too
+# myDict = dict(zip(keys, values))
+
+print(myDict)
+
+# Topic: Typecasting in Collections
 """ 
 We can change a collection to another collection
 by it's corresponding functions like list, dict.
@@ -934,6 +1201,10 @@ We can also make a collection without using
 it's specified brackets by using it's corresponding
 keyword like list, dict etc.
 """
+
+# We are converting a list into a tuple
+s = [1, 2, 3, 4, 5, 6]
+s = tuple(s)
 
 # Topic: Functions
 """
