@@ -1219,12 +1219,22 @@ They are:
     2. Calling a function
 """
 
+
+# Defining a function
+def greet():
+    print('Hello, Good morning!')
+
+
+# Calling a function
+greet()
+
+
 # SubTopic: Types of Functions
 """
 There are two types of functions.
 They are:
-    1. Built-in functions
-    2. User-defined functions
+    1. Built-in functions (Like len())
+    2. User-defined functions (Functions that we make)
 """
 
 # SubTopic: Parameters (Arguments)
@@ -1234,6 +1244,16 @@ perform a specific task on those variables.
 When the input is given to a function it is called as a argument.
 There are different types of parameters.
 """
+
+
+# This function expects 2 arguments, and gets 2 arguments
+
+def my_function(fname, lname):
+    print(fname + ' ' + lname)
+
+
+my_function('Emil', 'Refines')
+
 
 # SubTopic: Pass by Value or Reference
 """
@@ -1248,6 +1268,23 @@ so it would not affect the outside variable because the value is immutable
 if the value is mutable it will change the variable outside the function also.
 """
 
+
+def set_list(list):
+    list = ['A', 'B', 'C']
+    return list
+
+
+def add(list):
+    list.append('D')
+    return list
+
+
+my_list = ['E']
+
+print(set_list(my_list))
+print(add(my_list))
+
+
 # SubTopic: Types of Parameters
 """
 There are four types of parameters.
@@ -1255,12 +1292,72 @@ They are:
     1. Positional
     2. Keyword
     3. Default
-    4. *args and **kwargs
+    4. *args and **kwargs (*args: The syntax is to use the symbol * to take in a variable number of arguments;
+                           by convention, it is often used with the word args.
+                           What *args allows you to do is take in more arguments than the number of formal arguments 
+                           that you previously defined. With *args, any number of extra arguments can be tacked on to 
+                           your current formal parameters (including zero extra arguments).
+                           
+                           **kwargs: The special syntax **kwargs in function definitions in python is used to 
+                           pass a keyworded, variable-length argument list.
+                           We use the name kwargs with the double star.
+                           The reason is because the double star allows us to
+                           pass through keyword arguments (and any number of them).)
+
+
+
+A keyword argument is where you provide a name to the variable as you pass it into the function.
+One can think of the kwargs as being a dictionary that maps each keyword to the value that we pass alongside it.
+That is why when we iterate over the kwargs there doesn't seem to be any order in which they were printed out.)
     
 Normally if we make a function then all the parameters should be specified
 but we can make parameters optional or not compulsory by many ways.
 These are called as optional parameters.
 """
+
+
+# Positional
+def adding(o, ab, q):
+    return (o + ab + q)
+
+
+adding(1, 2, 3)
+
+
+# Keyword
+def greet(human, msg):
+    print('Hello', name + ', ' + msg)
+
+
+greet(msg='How do you do?', human='Bruce')
+
+
+# Default
+def adding(w, r=5, t=10):
+    return (w + r + t)
+
+
+adding(1, 2, 3)
+
+
+# *args
+def myfun(arg1, *argv):
+    print('First argument :', arg1)
+    for arg in argv:
+        print('Next argument through *argv :', arg)
+
+
+myfun('Hello', 'Welcome', 'to', 'Geeks for Geeks')
+
+
+# **kwargs
+def myfun(**kwargs):
+    for key, value in kwargs.items():
+        print(f'({key} == {value})')
+
+
+myfun(first='Geeks', mid='for', last='Geeks')
+
 
 # SubTopic: Scope of Variables
 """
@@ -1272,6 +1369,51 @@ the inside one is called as local variable which can be accessed only inside tha
 To use a global variable inside a function we use the keyword called as global.
 """
 
+
+# This function has a variable with
+# name same as s.
+def f():
+    me = 'abc'
+    print(s)
+
+
+# Global scope
+me = 'I love Geeks for geeks'
+f()
+print(s)
+
+# scope of variable
+a = 1
+
+
+# Uses global because there is no local 'a'
+def f():
+    print('Inside f() : ', a)
+
+
+# Variable 'a' is redefined as a local
+def g():
+    a = 2
+    print('Inside g() : ', a)
+
+
+# Uses global keyword to modify global 'a'
+def h():
+    global a
+    a = 3
+    print('Inside h() : ', a)
+
+
+# Global scope
+print('global : ', a)
+f()
+print('global : ', a)
+g()
+print('global : ', a)
+h()
+print('global : ', a)
+
+
 # SubTopic: Lambda Functions
 """
 Lambda functions are anonymous functions which means they have no name to them.
@@ -1280,11 +1422,58 @@ but in lambdas they can be used anywhere.
 These are defined in one line so it is also called as one-liner functions.
 """
 
+
+gh = lambda a: a + 10
+print(gh(5))
+
+gh = lambda a, b: a * b
+print(gh(5, 6))
+
+
+# showing difference between def() and lambda().
+def cube(y):
+    return y * y * y
+
+
+lambda_cube = lambda y: y * y * y
+
+# using the normally
+# defined function
+print(cube(5))
+
+# using the lambda function
+print(lambda_cube(5))
+
+
 # SubTopic: map, filter, reduce
 """
 map, filter, reduce are some methods will can be used with lambdas and without it.
 These are methods used very commonly in programs.
 """
+
+
+# map() with lambda()
+# to get double of a list.
+li = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
+
+final_list = list(map(lambda x: x * 2, li))
+print(final_list)
+
+# filter() with lambda()
+li = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
+
+final_list = list(filter(lambda x: (x % 2 != 0), li))
+print(final_list)
+
+# reduce() with lambda()
+# to get sum of a list
+
+from functools import reduce
+
+li = [5, 8, 10, 20, 50, 100]
+sum = reduce((lambda x, y: x + y), li)
+print(sum)
+
 
 # SubTopic: Recursion
 """
@@ -1293,6 +1482,18 @@ We can also call different functions inside a function.
 Recursion is used in many scenarios.
 In some scenarios it makes more sense to use recursion over iteration.
 """
+
+
+def factorial(x):
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x - 1))
+
+
+num = 3
+print('The factorial of', num, 'is', factorial(num))
+
 
 # SubTopic: Decorator
 """
@@ -1303,12 +1504,91 @@ to extend it's behaviour (The task a function does).
 We can achieve decorators in few ways.
 """
 
+
+# Python program to illustrate functions
+# can be treated as objects
+def shout(text):
+    return text.upper()
+
+
+print(shout('Hello'))
+
+yell = shout
+
+print(yell('Hello'))
+
+
+# defining a decorator
+def hello_decorator(func):
+    # inner1 is a Wrapper function in
+    # which the argument is called
+
+    # inner function can access the outer local
+    # functions like in this case "func"
+    def inner1():
+        print('Hello, this is before function execution')
+
+        # calling the actual function now
+        # inside the wrapper function.
+        func()
+
+        print('This is after function execution')
+
+    return inner1
+
+
+# defining a function, to be called inside wrapper
+def function_to_be_used():
+    print('This is inside the function !!')
+
+
 # SubTopic: Generators
 """
 Generators are functions with yield keyword instead of return keyword.
 yield is used to generate a value at a time.
 It is used in some scenarios like handling large datasets where we will work only on a single dataset.
 """
+
+
+# A generator function that yields 1 for first time,
+# 2 second time and 3 third time
+def simpleGeneratorFun():
+    yield 1
+    yield 2
+    yield 3
+
+
+for value in simpleGeneratorFun():
+    print(value)
+
+
+# A simple generator for Fibonacci Numbers
+def fib(limit):
+    # Initialize first two Fibonacci Numbers
+    a, b = 0, 1
+
+    # One by one yield next Fibonacci Number
+    while a < limit:
+        yield a
+        a, b = b, a + b
+
+
+# Create a generator object
+x = fib(5)
+
+# Iterating over the generator object using next
+print(x.next())  # In Python 3, __next__()
+print(x.next())
+print(x.next())
+print(x.next())
+print(x.next())
+
+# Iterating over the generator object using for
+# in loop.
+print('\nUsing for in loop')
+for i in fib(5):
+    print(i)
+
 
 # Topic: Modular Programming
 """
@@ -1332,11 +1612,15 @@ into a python file or a module.
 These is mainly used to import built-in modules.
 """
 
+import math
+
 # SubTopic: from
 """
 from is also a keyword used before import keyword to
 import a specific part of a module like a function etc.
 """
+
+from math import sqrt
 
 # SubTopic: Packages
 """
@@ -1402,6 +1686,28 @@ But modules can also have runnable code.
 A special variable __name__ is to determine
 whether a module is the main module or not.
 """
+
+
+# File1.py
+
+print(f'File1 __name__ = {__name__}')
+
+if __name__ == '__main__':
+    print('File1 is being run directly')
+else:
+    print('File1 is being imported')
+
+# File2.py
+
+# import File1
+
+print(f'File2 __name__ =  {__name__}')
+
+if __name__ == '__main__':
+    print('File2 is being run directly')
+else:
+    print('File2 is being imported')
+
 
 # Topic: Math Module
 """
