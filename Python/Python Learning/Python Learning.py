@@ -468,29 +468,29 @@ Types of bitwise operators:
 a = 10
 b = 4
 
-# Print bitwise AND operation
+# bitwise AND
 print('a & b =', a & b)
 
-# Print bitwise OR operation
+# bitwise OR
 print('a | b =', a | b)
 
-# Print bitwise NOT operation
+# bitwise NOT
 print('~a =', ~a)
 
-# print bitwise XOR operation
+# bitwise XOR
 print('a ^ b =', a ^ b)
 
 a = 10
 b = -10
 
-# print bitwise right shift operator
+# bitwise right shift
 print('a >> 1 =', a >> 1)
 print('b >> 1 =', b >> 1)
 
 a = 5
 b = -10
 
-# print bitwise left shift operator
+# bitwise left shift
 print('a << 1 =', a << 1)
 print('b << 1 =', b << 1)
 
@@ -753,9 +753,6 @@ while i <= n:
 # print the sum
 print('The sum is', sums)
 
-'''Example to illustrate
-the use of else statement
-with the while loop'''
 
 counter = 0
 
@@ -846,16 +843,16 @@ It is mutable (After making it we can change it).
 It is iterable.
 """
 
-thislist = ["apple", "banana", "cherry"]
+thislist = ['apple', 'banana', 'cherry']
 print(thislist)
 
-thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+thislist = ['apple', 'banana', 'cherry', 'apple', 'cherry']
 print(thislist)
 
-list1 = ["apple", "banana", "cherry"]
+list1 = ['apple', 'banana', 'cherry']
 list2 = [1, 5, 7, 9, 3]
 list3 = [True, False, False]
-list4 = ["abc", 34, True, 40, "male"]
+list4 = ['abc', 34, True, 40, 'male']
 
 # SubTopic: Functions of List
 """
@@ -869,7 +866,7 @@ len(cars)
 
 # append
 fruits = ['apple', 'banana', 'cherry']
-fruits.append("orange")
+fruits.append('orange')
 
 # clear
 fruits = ['apple', 'banana', 'cherry', 'orange']
@@ -903,18 +900,18 @@ This is called as list comprehension.
 """
 
 # Without list comprehension
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']
 newlist = []
 
 for x in fruits:
-    if "a" in x:
+    if 'a' in x:
         newlist.append(x)
 
 print(newlist)
 
 # With list comprehension
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = [x for x in fruits if "a" in x]
+fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']
+newlist = [x for x in fruits if 'a' in x]
 print(newlist)
 
 # Note: syntax: newlist = [expression for item in iterable if condition == True]
@@ -927,15 +924,15 @@ because of immutability there is no tuple comprehension.
 In other ways tuple is quite similar to list.
 """
 
-mytuple = ("apple", "banana", "cherry")
+mytuple = ('apple', 'banana', 'cherry')
 
-thistuple = ("apple", "banana", "cherry")
+thistuple = ('apple', 'banana', 'cherry')
 print(thistuple)
 
-thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+thistuple = ('apple', 'banana', 'cherry', 'apple', 'cherry')
 print(thistuple)
 
-thistuple = ("apple",)
+thistuple = ('apple',)
 print(type(thistuple))
 
 # NOT a tuple
@@ -968,15 +965,15 @@ We use sets in some scenarios instead of list because set is highly optimized me
 for checking whether a specific element is present.
 """
 
-myset = {"apple", "banana", "cherry"}
+myset = {'apple', 'banana', 'cherry'}
 
-thisset = {"apple", "banana", "cherry"}
+thisset = {'apple', 'banana', 'cherry'}
 print(thisset)
 
 # Note: Sets are unordered,
 #  so you cannot be sure in which order the items will appear.
 
-thisset = {"apple", "banana", "cherry", "apple"}
+thisset = {'apple', 'banana', 'cherry', 'apple'}
 print(thisset)
 
 # Note: Duplicate values will be ignored
@@ -989,40 +986,40 @@ compared to other data types.
 """
 
 # add
-fruits = {"apple", "banana", "cherry"}
-fruits.add("orange")
+fruits = {'apple', 'banana', 'cherry'}
+fruits.add('orange')
 print(fruits)
 
 # clear
-fruits = {"apple", "banana", "cherry"}
+fruits = {'apple', 'banana', 'cherry'}
 fruits.clear()
 print(fruits)
 
 # difference
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+x = {'apple', 'banana', 'cherry'}
+y = {'google', 'microsoft', 'apple'}
 z = x.difference(y)
 print(z)
 
 # intersection
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+x = {'apple', 'banana', 'cherry'}
+y = {'google', 'microsoft', 'apple'}
 z = x.intersection(y)
 print(z)
 
 # pop
-fruits = {"apple", "banana", "cherry"}
+fruits = {'apple', 'banana', 'cherry'}
 fruits.pop()
 print(fruits)
 
 # remove
-fruits = {"apple", "banana", "cherry"}
-fruits.remove("banana")
+fruits = {'apple', 'banana', 'cherry'}
+fruits.remove('banana')
 print(fruits)
 
 # update
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+x = {'apple', 'banana', 'cherry'}
+y = {'google', 'microsoft', 'apple'}
 x.update(y)
 print(x)
 
@@ -1041,13 +1038,13 @@ for var in input_list:
     if var % 2 == 0:
         output_set.add(var)
 
-print("Output Set using for loop:", output_set)
+print('Output Set using for loop:', output_set)
 
 # With Set comprehensions
 # for constructing output set
 input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
 set_using_comp = {var for var in input_list if var % 2 == 0}
-print("Output Set using set comprehensions:", set_using_comp)
+print('Output Set using set comprehensions:', set_using_comp)
 
 # SubTopic: Dictionary
 """
@@ -1064,9 +1061,9 @@ It is like a mixture of set and list with key, value pair
 """
 
 thisdict = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
 }
 print(thisdict)
 
@@ -1075,11 +1072,11 @@ print(thisdict)
 
 # Dictionary Items
 thisdict = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
 }
-print(thisdict["brand"])
+print(thisdict['brand'])
 
 # thisdict = {
 #   "brand": "Ford",
@@ -1103,9 +1100,9 @@ print(len(thisdict))
 
 # clear
 car = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
 }
 car.clear()
 print(car)
@@ -1118,36 +1115,36 @@ print(thisdict)
 
 # get
 car = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
 }
-x = car.get("model")
+x = car.get('model')
 print(x)
 
 # items
 car = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
 }
 x = car.items()
 print(x)
 
 # pop
 car = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
 }
-car.pop("model")
+car.pop('model')
 print(car)
 
 # values
 car = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
 }
 x = car.values()
 print(x)
@@ -1159,17 +1156,17 @@ this is called nested dictionaries.
 """
 
 myfamily = {
-    "child1": {
-        "name": "Emil",
-        "year": 2004
+    'child1': {
+        'name': 'Emil',
+        'year': 2004
     },
-    "child2": {
-        "name": "Tobias",
-        "year": 2007
+    'child2': {
+        'name': 'Tobias',
+        'year': 2007
     },
-    "child3": {
-        "name": "Linus",
-        "year": 2011
+    'child3': {
+        'name': 'Linus',
+        'year': 2011
     }
 }
 
@@ -1228,7 +1225,6 @@ def greet():
 # Calling a function
 greet()
 
-
 # SubTopic: Types of Functions
 """
 There are two types of functions.
@@ -1253,7 +1249,6 @@ def my_function(fname, lname):
 
 
 my_function('Emil', 'Refines')
-
 
 # SubTopic: Pass by Value or Reference
 """
@@ -1283,7 +1278,6 @@ my_list = ['E']
 
 print(set_list(my_list))
 print(add(my_list))
-
 
 # SubTopic: Types of Parameters
 """
@@ -1358,7 +1352,6 @@ def myfun(**kwargs):
 
 myfun(first='Geeks', mid='for', last='Geeks')
 
-
 # SubTopic: Scope of Variables
 """
 Normally we make variables inside a function and also outside a function.
@@ -1413,7 +1406,6 @@ print('global : ', a)
 h()
 print('global : ', a)
 
-
 # SubTopic: Lambda Functions
 """
 Lambda functions are anonymous functions which means they have no name to them.
@@ -1422,7 +1414,6 @@ but in lambdas they can be used anywhere.
 These are defined in one line so it is also called as one-liner functions.
 """
 
-
 gh = lambda a: a + 10
 print(gh(5))
 
@@ -1430,7 +1421,7 @@ gh = lambda a, b: a * b
 print(gh(5, 6))
 
 
-# showing difference between def() and lambda().
+# showing difference between def and lambda
 def cube(y):
     return y * y * y
 
@@ -1444,28 +1435,26 @@ print(cube(5))
 # using the lambda function
 print(lambda_cube(5))
 
-
 # SubTopic: map, filter, reduce
 """
 map, filter, reduce are some methods will can be used with lambdas and without it.
 These are methods used very commonly in programs.
 """
 
-
-# map() with lambda()
+# map with lambda
 # to get double of a list.
 li = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
 
 final_list = list(map(lambda x: x * 2, li))
 print(final_list)
 
-# filter() with lambda()
+# filter with lambda
 li = [5, 7, 22, 97, 54, 62, 77, 23, 73, 61]
 
 final_list = list(filter(lambda x: (x % 2 != 0), li))
 print(final_list)
 
-# reduce() with lambda()
+# reduce with lambda
 # to get sum of a list
 
 from functools import reduce
@@ -1473,7 +1462,6 @@ from functools import reduce
 li = [5, 8, 10, 20, 50, 100]
 sum = reduce((lambda x, y: x + y), li)
 print(sum)
-
 
 # SubTopic: Recursion
 """
@@ -1493,7 +1481,6 @@ def factorial(x):
 
 num = 3
 print('The factorial of', num, 'is', factorial(num))
-
 
 # SubTopic: Decorator
 """
@@ -1588,7 +1575,6 @@ print(x.next())
 print('\nUsing for in loop')
 for i in fib(5):
     print(i)
-
 
 # Topic: Modular Programming
 """
@@ -1687,7 +1673,6 @@ A special variable __name__ is to determine
 whether a module is the main module or not.
 """
 
-
 # File1.py
 
 print(f'File1 __name__ = {__name__}')
@@ -1708,7 +1693,6 @@ if __name__ == '__main__':
 else:
     print('File2 is being imported')
 
-
 # Topic: Math Module
 """
 Math module is used for doing advanced calculations
@@ -1721,6 +1705,26 @@ Array is also a python collection like list,set and tuple etc.
 But it is a bit more complex than others.
 """
 
+# importing "array" for array creations
+import array as arr
+
+# creating an array with integer type
+a = arr.array('i', [1, 2, 3])
+
+# printing original array
+print('The new created array is : ', end=' ')
+for i in range(0, 3):
+    print(a[i], end=' ')
+print()
+
+# creating an array with float type
+b = arr.array('d', [2.5, 3.2, 3.3])
+
+# printing original array
+print('The new created array is : ', end=' ')
+for i in range(0, 3):
+    print(b[i], end=' ')
+
 # Note: Python does not have built-in support for Arrays, but Python Lists can be used instead.
 #  However, to work with arrays in Python you will have to import a library, like the NumPy library.
 
@@ -1730,6 +1734,51 @@ There are many functions of array like typecode, itemsize etc.
 These functions can only used on arrays and some of them can be used also on any data types.
 """
 
+# array with int type
+a = arr.array('i', [1, 2, 3, 4, 5, 6])
+
+# accessing element of array
+print('Access element is: ', a[0])
+
+# accessing another element of array
+print('Access element is: ', a[3])
+
+# array with float type
+b = arr.array('d', [2.5, 3.2, 3.3])
+
+# accessing element of array
+print('Access element is: ', b[1])
+
+a = arr.array('i', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+print('Initial Array: ')
+for i in (a):
+    print(i, end=" ")
+
+# Print elements of a range
+# using Slice operation
+Sliced_array = a[3:8]
+print('\nSlicing elements in a range 3-8: ')
+print(Sliced_array)
+
+# Print elements from a
+# pre-defined point to end
+Sliced_array = a[5:]
+print('\nElements sliced from 5th '
+      'element till the end: ')
+print(Sliced_array)
+
+# Printing elements from
+# beginning till end
+Sliced_array = a[:]
+print('\nPrinting all elements using slice operation: ')
+print(Sliced_array)
+
+funarray = arr.itemsize()
+print(funarray)
+
+funarrays = arr.typecode()
+print(funarrays)
+
 # SubTopic: Numpy Library
 """
 To use arrays more comfortably and effectivity we use numpy (A Library).
@@ -1737,12 +1786,54 @@ Numpy is a third-party library so, we need to install it through pip.
 It has some good features and implementations.
 """
 
+import numpy as np
+
 # SubTopic: Multi Dimensional Array
 """
 With numpy we can make a multi-dimensional array
 most likely a two-dimensional array.
 Two-Dimensional Array consists of various rows and columns like a matrix.
 """
+
+# Creating array object
+arr = np.array([[1, 2, 3],
+                [4, 2, 5]])
+
+# type
+print('Array is of type: ', type(arr))
+
+# ndim
+print('No. of dimensions: ', arr.ndim)
+
+# shape
+print('Shape of array: ', arr.shape)
+
+# size
+print('Size of array: ', arr.size)
+
+# dtype
+print('Array stores elements of type: ', arr.dtype)
+
+# An exemplar array
+arr = np.array([[-1, 2, 0, 4],
+                [4, -0.5, 6, 0],
+                [2.6, 0, 7, 8],
+                [3, -7, 4, 2.0]])
+
+# Slicing array
+temp = arr[:2, ::2]
+print('Array with first 2 rows and alternate'
+      'columns(0 and 2):\n', temp)
+
+# Integer array indexing example
+temp = arr[[0, 1, 2, 3], [3, 2, 1, 0]]
+print('\nElements at indices (0, 3), (1, 2), (2, 1),'
+      '(3, 0):\n', temp)
+
+# boolean array indexing example
+cond = arr > 0  # cond is a boolean array
+temp = arr[cond]
+print('\nElements greater than 0:\n', temp)
 
 # Topic: Exception or Error handling
 """
@@ -1777,11 +1868,46 @@ except keyword is used to manipulate the error.
 finally is used to complete the error like closing a file.
 """
 
+a = [1, 2, 3]
+
+try:
+    print(f'Second element = {(a[1])}')
+
+    # Throws error since there are only 3 elements in array
+    print(f'Fourth element = {(a[3])}')
+
+except IndexError:
+    print('An error occurred')
+
+# No exception Exception raised in try block
+try:
+    k = 5 // 0  # raises divide by zero exception.
+    print(k)
+
+# handles zerodivision exception
+except ZeroDivisionError:
+    print('Can\'t divide by zero')
+
+finally:
+    # this block is always executed
+    # regardless of exception generation.
+    print('This is always executed')
+
 # SubTopic: Raising Exceptions
 """
 Sometimes we know a error can occur so we raise exceptions to handle it
 in such a way that user could understand like popping a message etc.
 """
+
+x = -1
+
+if x < 0:
+    raise Exception('Sorry, no numbers below zero')
+
+x = 'hello'
+
+if not type(x) is int:
+    raise TypeError('Only integers are allowed')
 
 # Topic: File I/O
 """
@@ -1812,6 +1938,22 @@ open keyword is used to open a file.
 It is mandatory to open the file before you work with it.
 """
 
+# a file named 'Python Learning',
+# will be opened with the reading mode.
+file = open('Python Learning.txt', 'r')
+
+# This will print every line one by one in the file
+for each in file:
+    print(each)
+
+# read
+file = open('Python Learning.txt', 'r')
+print(file.read())
+
+# read with characters
+file = open('Python Learning.txt', 'r')
+print(file.read(5))
+
 # SubTopic: open, close
 """
 After you open the file and work with it,
@@ -1819,13 +1961,16 @@ it is a good practice to close the file.
 To close a file we use the close keyword.
 """
 
-# SubTopic: Context Managers
-"""
-Context managers will manage the usage of a resource like open and closing file
-regardless of a error in code logically and in runtime.
-A example of this is with keyword.
-We can also create our own context managers with the module named contextlib.
-"""
+# create a file
+file = open('Python Learning.txt', 'w')
+file.write('This is the write command')
+file.write('It allows us to write in a particular file')
+file.close()
+
+# append
+file = open('Python Learning.txt', 'a')
+file.write('This will add this line')
+file.close()
 
 # SubTopic: with Keyword
 """
@@ -1834,5 +1979,20 @@ and also with keywords. All suites require indentation. Suite is also called as 
 we no longer need to close the file because with block will close it by itself.
 It is a good practice to use with suite to work with files.
 """
+
+# with
+with open('Python Learning.txt') as file:
+    data = file.read()
+
+# with along with write
+with open('Python Learning.txt', 'w') as f:
+    f.write('Hello World!!!')
+
+# split
+with open('Python Learning.txt', 'r') as file:
+    data = file.readlines()
+    for line in data:
+        word = line.split()
+        print(word)
 
 # Documentation: https://docs.python.org/3/
