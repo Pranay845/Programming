@@ -35,6 +35,11 @@ A class is a blueprint or a design for a object that defines the it's attributes
 the methods (Functions in OOPs) common to all objects or instances  of a same design.
 """
 
+
+class MyClass:
+    x = 5
+
+
 # SubTopic: __init__ Method
 """
 The __init__ method is a special method which is executed every time automatically
@@ -52,6 +57,13 @@ self is a pointer to determine based on which object is calling a specific metho
 
 These method is useful when you need to create attributes which can be used by other methods in class.
 """
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
 
 # Note: When we want compare two objects we create a compare function inside the class and pass the two arguments
 #  one is which object is calling and the other is which object needs to be compared.
@@ -76,6 +88,33 @@ There are three different types of variables in OOPs:
                        This is a  Method level variable).
 """
 
+
+# Static or Class Attributes
+class sampleclass:
+    count = 0  # Static or Class Attributes
+
+    def increase(self):
+        sampleclass.count += 1
+
+
+# Instance attributes
+class emp:
+    def __init__(self):
+        self.name = 'xyz'  # Instance attributes
+        self.salary = 4000
+
+    def show(self):
+        print(self.name)
+        print(self.salary)
+
+
+# Local variable
+class naming:
+    def greet(self):
+        name = 'Steve'  # Local variable
+        print('Hello ', name)
+
+
 # SubTopic: Types of Methods (Functions)
 """
 There are Three different types of Methods in OOPs:
@@ -97,6 +136,44 @@ There are Three different types of Methods in OOPs:
                       This method works like a simple and a  plain function same like the functions outside the class).
 """
 
+
+# Instance method
+class Student:
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def avg(self):
+        return (self.a + self.b) / 2
+
+
+# Class method
+class Student:
+    name = 'Student'
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    @classmethod
+    def info(cls):
+        return cls.name
+
+
+# Static method
+class Student:
+    name = 'Student'
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    @staticmethod
+    def info():
+        return 'This is a student class'
+
+
 # SubTopic: Magic/Dunder Methods
 """
 Dunder or magic methods in Python are the methods having
@@ -109,6 +186,22 @@ Few examples for magic methods are:
 4. __repr__ etc.
 """
 
+
+class String:
+
+    # magic method to initiate object
+    def __init__(self, string):
+        self.string = string
+
+        # print our string object
+
+    def __repr__(self):
+        return 'Object: {}'.format(self.string)
+
+    def __add__(self, other):
+        return self.string + other
+
+
 # SubTopic: Inner Class
 """
 Inner class is a class made inside a another class.
@@ -116,6 +209,29 @@ This is possible because executes line by line.
 To access the inner class we need to first write outer class than the inner class and
 then we can access the inner class.
 """
+
+
+class Color:
+
+    # constructor method
+    def __init__(self):
+        # object attributes
+        self.name = 'Green'
+        self.lg = self.Lightgreen()
+
+    def show(self):
+        print('Name:', self.name)
+
+    # create Lightgreen class
+    class Lightgreen:
+        def __init__(self):
+            self.name = 'Light Green'
+            self.code = '024avc'
+
+        def display(self):
+            print('Name:', self.name)
+            print('Code:', self.code)
+
 
 # Topic: Object
 """
@@ -136,6 +252,32 @@ then we can access the methods created inside the
 class or mutate the object's attributes created using the init method.
 """
 
+
+p1 = Person('John', 36)
+
+print(p1.name)
+print(p1.age)
+
+# object creation for String class
+string1 = String('Hello')
+
+# print object location
+print(string1)
+
+# create Color class object
+outer = Color()
+
+# method calling
+outer.show()
+
+# create a Lightgreen
+# inner class object
+g = outer.lg
+
+# inner class method calling
+g.display()
+
+
 # SubTopic: Object Introspection
 """
 Object introspection means to recognize the object
@@ -155,6 +297,20 @@ Types of introspects:
     10. help(): It checks what other functions do.
 """
 
+
+# type for a user-defined class
+type(String)
+
+# type for a built-in class
+type(int)
+
+# id for a user-defined class
+id(String)
+
+# id for a built-in class
+id(int)
+
+
 # Topic: Inheritance
 """
 Inheritance means to define a class that inherits
@@ -164,6 +320,37 @@ Child class is the class that inherits from another class, also called derived c
 We name these classes as parent and child because has they are the same in python as in real world
 as only child can inherit the parent but not viceversa.
 """
+
+
+class Person():
+
+    # Constructor
+    def __init__(self, name):
+        self.name = name
+
+    # To get name
+    def getName(self):
+        return self.name
+
+    # To check if this person is an employee
+    def isEmployee(self):
+        return False
+
+
+# Inherited or Subclass (Note Person in bracket)
+class Employee(Person):
+
+    # Here we return true
+    def isEmployee(self):
+        return True
+
+
+emp = Person('Geek1')  # An Object of Person
+print(emp.getName(), emp.isEmployee())
+
+emp = Employee('Geek2')  # An Object of Employee
+print(emp.getName(), emp.isEmployee())
+
 
 # SubTopic: Types of Inheritance
 """
@@ -186,6 +373,95 @@ In multiple inheritance if we have the init or any other method in both parent c
 parent classes(A,B) inherited by a child class(C) then if we want execute than it will execute the method from
 first parent class from the left side because of MRO(Method Resolution Order), this order follows from left to right.
 """
+
+
+# Single inheritance
+
+# Base class
+class Parent:  # Class A
+    def func1(self):
+        print('This function is in parent class.')
+
+
+# Derived class
+class Child(Parent):  # Class B
+    def func2(self):
+        print('This function is in child class.')
+
+
+obj = Child()
+obj.func1()
+obj.func2()
+
+
+# Multiple inheritance
+
+# Base class1
+class Mother:  # Class A
+    mothername = ''
+
+    def mother(self):
+        print(self.mothername)
+
+
+# Base class2
+class Father:  # Class B
+    fathername = ''
+
+    def father(self):
+        print(self.fathername)
+
+
+# Derived class
+class Son(Mother, Father):  # Class C
+    def parents(self):
+        print('Father :', self.fathername)
+        print('Mother :', self.mothername)
+
+
+s1 = Son()
+s1.fathername = 'RAM'
+s1.mothername = 'SITA'
+s1.parents()
+
+
+# Multilevel inheritance
+
+# Base class
+class Grandfather:  # Class A
+
+    def __init__(self, grandfathername):
+        self.grandfathername = grandfathername
+
+
+# Intermediate class
+class Father(Grandfather):  # Class B
+    def __init__(self, fathername, grandfathername):
+        self.fathername = fathername
+
+        # invoking constructor of Grandfather class
+        Grandfather.__init__(self, grandfathername)
+
+
+# Derived class
+class Son(Father):  # Class C
+    def __init__(self, sonname, fathername, grandfathername):
+        super().__init__(fathername, grandfathername)
+        self.sonname = sonname
+
+        # invoking constructor of Father class
+        Father.__init__(self, fathername, grandfathername)
+
+    def print_name(self):
+        print('Grandfather name :', self.grandfathername)
+        print('Father name :', self.fathername)
+        print('Son name :', self.sonname)
+
+
+s1 = Son('Prince', 'Rampal', 'Lal mani')
+print(s1.grandfathername)
+s1.print_name()
+
 
 # Topic: Polymorphism
 """
@@ -298,4 +574,3 @@ so we can write our own custom metaclasses to modify the way classes are
 generated by performing extra actions or injecting code.
 Usually we do not need custom metaclasses but sometime it’s necessary.
 """
-
