@@ -794,4 +794,3 @@ class B(Base):
 # This will raise an error!
 class C(A, B):
     pass
-
