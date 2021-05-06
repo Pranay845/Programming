@@ -75,17 +75,17 @@ class Person:
 # SubTopic: Types of Attributes (Variables)
 """
 There are three different types of variables in OOPs:
-    1. Instance variable (These variables are created inside the init method with the self keyword.
+    1. Instance Variable (These variables are created inside the init method with the self keyword.
                           These variables can are different to each object and
                           we can change the variable even outside the class.
                           This is a Object level variable).
                           
-    2. Static variable (These variables are directly created under a class as a normal variable.
+    2. Static Variable (These variables are directly created under a class as a normal variable.
                         These variables will apply to every object made by the class
                         These cannot be changed outside the class hence the name static (Always the same).
                         This is a Class level variable).
 
-    3. Local variable (These variables are created in a method and only can used inside the method.
+    3. Local Variable (These variables are created in a method and only can used inside the method.
                        This is a  Method level variable).
 """
 
@@ -98,10 +98,10 @@ class sampleclass:
         sampleclass.count += 1
 
 
-# Instance attributes
+# Instance Attributes
 class emp:
     def __init__(self):
-        self.name = 'xyz'  # Instance attributes
+        self.name = 'xyz'  # Instance Attributes
         self.salary = 4000
 
     def show(self):
@@ -109,36 +109,36 @@ class emp:
         print(self.salary)
 
 
-# Local variable
+# Local Variable
 class naming:
     def greet(self):
-        name = 'Steve'  # Local variable
+        name = 'Steve'  # Local Variable
         print('Hello ', name)
 
 
 # SubTopic: Types of Methods (Functions)
 """
 There are Three different types of Methods in OOPs:
-    1. Instance method (This method is used to work with the object.
+    1. Instance Method (This method is used to work with the object.
                         This method can only be used with a object.
                         In instance methods there are two types of methods:
                             They are accessor methods (These methods are used for accessing the objects attributes) and
                             mutator methods (These are used to manipulate the object's attributes).
                         Instance methods can be used with instance variable. In instance method we use self keyword).
                         
-    2. Class method (This method is used to work with class variables.
+    2. Class Method (This method is used to work with class variables.
                      We pass only one argument which is not the self keyword and it's cls.
                      This method can be called with the class name as it is a class method.
                      To tell python, it's a class method we use a built-in decorator called classmethod).
                      
-    3. Static method (This has nothing to do with class or instance variables.
+    3. Static Method (This has nothing to do with class or instance variables.
                       So, we don't pass any arguments to this method.
                       To tell python, it's a static method we use a built-in decorator called staticmethod.
                       This method works like a simple and a  plain function same like the functions outside the class).
 """
 
 
-# Instance method
+# Instance Method
 class Student:
 
     def __init__(self, a, b):
@@ -149,7 +149,7 @@ class Student:
         return (self.a + self.b) / 2
 
 
-# Class method
+# Class Method
 class Student:
     name = 'Student'
 
@@ -162,7 +162,7 @@ class Student:
         return cls.name
 
 
-# Static method
+# Static Method
 class Student:
     name = 'Student'
 
@@ -181,10 +181,10 @@ Dunder or magic methods in Python are the methods having
 two prefix and suffix underscores in the method name.
 Dunder here means “Double Under (Underscores)”.
 Few examples for magic methods are:
-1. __init__
-2. __add__
-3. __len__
-4. __repr__ etc.
+    1. __init__
+    2. __add__
+    3. __len__
+    4. __repr__ etc.
 """
 
 
@@ -240,8 +240,8 @@ An Object is an instance of a Class.
 A class is like a blueprint while an instance
 is a copy of the class with actual values.
 An object consists of:
-1. State: It is represented by the attributes of an object.
-2. Behavior: It is represented by the methods of an object.
+    1. State: It is represented by the attributes of an object.
+    2. Behavior: It is represented by the methods of an object.
 """
 
 # SubTopic: Object Creation
@@ -338,7 +338,7 @@ class Person():
         return False
 
 
-# Inherited or Subclass (Note Person in bracket)
+# Inherited or Subclass (Notice Person in bracket)
 class Employee(Person):
 
     # Here we return true
@@ -376,7 +376,7 @@ first parent class from the left side because of MRO(Method Resolution Order), t
 """
 
 
-# Single inheritance
+# Single Inheritance
 
 # Base class
 class Parent:  # Class A
@@ -395,7 +395,7 @@ obj.func1()
 obj.func2()
 
 
-# Multiple inheritance
+# Multiple Inheritance
 
 # Base class1
 class Mother:  # Class A
@@ -426,7 +426,7 @@ s1.mothername = 'SITA'
 s1.parents()
 
 
-# Multilevel inheritance
+# Multilevel Inheritance
 
 # Base class
 class Grandfather:  # Class A
@@ -588,7 +588,7 @@ This is called method overriding.
 """
 
 
-# Method overloading
+# Method Overloading
 
 # First product method.
 # Takes two argument and print their product
@@ -610,7 +610,7 @@ def product(a, b, c):
 product(4, 5, 5)
 
 
-# Method overriding
+# Method Overriding
 
 # Defining parent class
 class Parent():
@@ -831,8 +831,6 @@ We can also create our own context managers with the module named contextlib.
 """
 
 
-# Context manager
-
 class ContextManager():
     def __init__(self):
         print('init method called')
@@ -889,7 +887,6 @@ Usually we do not need custom metaclasses but sometime it’s necessary.
 """
 
 
-# our metaclass
 class MultiBases(type):
     # overriding __new__ method
     def __new__(cls, clsname, bases, clsdict):
@@ -924,4 +921,3 @@ class B(Base):
 # This will raise an error!
 class C(A, B):
     pass
-

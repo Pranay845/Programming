@@ -855,9 +855,9 @@ It can be used separately without a loop.
 # SubTopic: break, continue, pass
 """
 break, continue, pass are keywords used mainly in loops.
-1. break means stop the loop.
-2. continue means leave this iteration and go to the next iteration.
-3. pass means there are no statements here, skip it. pass can also be used with if, elif, else statements.
+    1. break means stop the loop.
+    2. continue means leave this iteration and go to the next iteration.
+    3. pass means there are no statements here, skip it. pass can also be used with if, elif, else statements.
 """
 
 
@@ -1392,11 +1392,11 @@ They are:
     3. Default
     4. *args and **kwargs (*args: The syntax is to use the symbol * to take in a variable number of arguments;
                            by convention, it is often used with the word args.
-                           What *args allows you to do is take in more arguments than the number of formal arguments 
-                           that you previously defined. With *args, any number of extra arguments can be tacked on to 
+                           What *args allows you to do is take in more arguments than the number of formal arguments
+                           that you previously defined. With *args, any number of extra arguments can be tacked on to
                            your current formal parameters (including zero extra arguments).
                            
-                           **kwargs: The special syntax **kwargs in function definitions in python is used to 
+                           **kwargs: The special syntax **kwargs in function definitions in python is used to
                            pass a keyworded, variable-length argument list.
                            We use the name kwargs with the double star.
                            The reason is because the double star allows us to
@@ -1735,8 +1735,8 @@ init.py is there to tell python this directory as a package.
 """
 There are two types of modules.
 They are:
-1. Built-in modules
-2. Created modules
+    1. Built-in modules
+    2. Created modules
 """
 
 # SubTopic: Created Modules
@@ -1758,8 +1758,8 @@ created by other developers which help us for various purposes.
 # SubTopic: Module Installation
 """
 To install a module:
-1. We open the terminal or powershell
-2. Type the command pip install <package name>
+    1. We open the terminal or powershell
+    2. Type the command pip install <package name>
 """
 
 # SubTopic: Virtual Environment (venv)
@@ -1973,9 +1973,9 @@ however, it changes the flow of the program.
 """
 There are three types of errors.
 They are:
-1. Syntax Errors
-2. Logical Errors
-3. Runtime Errors
+    1. Syntax Errors
+    2. Logical Errors
+    3. Runtime Errors
 
 Syntax Errors are done by the developer with syntax.
 Logical Errors are which have problem with the logic.
@@ -2044,10 +2044,11 @@ We can edit and read files.
 First we need to open a file, play with it and close the file.
 There are four types of modes to open a file.
 They are:
-1. "r" for reading.
-2. "w" for writing.
-3. "a" for appending.
-4. "r+" for both reading and writing
+    1. "r" for reading.
+    2. "w" for writing.
+    3. "a" for appending.
+    4. "r+" for both reading and writing
+
 We can also create files.
 """
 
