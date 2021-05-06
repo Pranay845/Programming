@@ -10,6 +10,7 @@ but all of them need to follow some strategy when
 they are implemented and this methodology/strategy is paradigms.
 """
 
+
 # SubTopic: Object-Oriented Programming
 """
 Any object in real life has characteristics.
@@ -64,12 +65,12 @@ class Person:
         self.name = name
         self.age = age
 
-
 # Note: When we want compare two objects we create a compare function inside the class and pass the two arguments
 #  one is which object is calling and the other is which object needs to be compared.
 #  The argument need not to be the name of the object which is compared.
 #  Then we use if statement and the compare method to compare objects
 #  because python does not know how to compare objects.
+
 
 # SubTopic: Types of Attributes (Variables)
 """
@@ -483,6 +484,36 @@ Using Duck Typing, We don't care about the class or the type of object created b
 We just care about does the required method exists or not.
 """
 
+
+class Specialstring:
+    def __len__(self):
+        return 21
+
+
+string = Specialstring()
+print(len(string))
+
+
+class Bird:
+    def fly(self):
+        print('fly with wings')
+
+
+class Airplane:
+    def fly(self):
+        print('fly with fuel')
+
+
+class Fish:
+    def swim(self):
+        print('fish swim in sea')
+
+
+# Attributes having same name are considered as duck typing
+for obj in Bird(), Airplane(), Fish():
+    obj.fly()
+
+
 # SubTopic: Operator Overloading
 """
 Operator overloading means giving extended meaning beyond their predefined operational meaning.
@@ -495,6 +526,48 @@ these operators will call a class like for example '+' it calls __add__ method.
 So we add extra functionality to the method(__add__).
 This is called Operator overloading.
 """
+
+
+# To overload an binary + operator
+
+class A:
+    def __init__(self, a):
+        self.a = a
+
+    # adding two objects
+    def __add__(self, o):
+        return self.a + o.a
+
+
+ob1 = A(1)
+ob2 = A(2)
+ob3 = A('Geeks')
+ob4 = A('For')
+
+print(ob1 + ob2)
+print(ob3 + ob4)
+
+
+# A Program to perform addition of two complex numbers using binary + operator overloading.
+
+class complex:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    # adding two objects
+    def __add__(self, other):
+        return self.a + other.a, self.b + other.b
+
+    def __str__(self):
+        return self.a, self.b
+
+
+Ob1 = complex(1, 2)
+Ob2 = complex(2, 3)
+Ob3 = Ob1 + Ob2
+print(Ob3)
+
 
 # SubTopic: Method Overloading and Overriding
 """
@@ -513,6 +586,63 @@ not the the method from parent class(A) which is inherited.
 This means the method from parent class(A) is overridden by the method from the child class(B).
 This is called method overriding.
 """
+
+
+# Method overloading
+
+# First product method.
+# Takes two argument and print their product
+def product(a, b):
+    p = a * b
+    print(p)
+
+
+# Second product method
+# Takes three argument and print their product
+def product(a, b, c):
+    p = a * b * c
+    print(p)
+
+
+# Uncommenting the below line shows an error product(4, 5)
+
+# This line will call the second product method
+product(4, 5, 5)
+
+
+# Method overriding
+
+# Defining parent class
+class Parent():
+
+    # Constructor
+    def __init__(self):
+        self.value = 'Inside Parent'
+
+    # Parent's show method
+    def show(self):
+        print(self.value)
+
+
+# Defining child class
+class Child(Parent):
+
+    # Constructor
+    def __init__(self):
+        super().__init__()
+        self.value = 'Inside Child'
+
+    # Child's show method
+    def show(self):
+        print(self.value)
+
+
+obj1 = Parent()
+obj2 = Child()
+
+obj1.show()
+obj2.show()
+
 
 # Topic: Abstract Methods and Classes
 """
@@ -794,3 +924,4 @@ class B(Base):
 # This will raise an error!
 class C(A, B):
     pass
+

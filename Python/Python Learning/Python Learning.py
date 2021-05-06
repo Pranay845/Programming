@@ -3,8 +3,11 @@
 Let's start by the Hello World! Program in python.
 """
 
+
 print('Hello World!')  # print simply means we are telling python show something in a console.
+
 # Note: We are executing this code in IDLE.
+
 
 # Topic: Variables
 """
@@ -14,12 +17,14 @@ in our home which have something in it
 and we keep a label on it.
 """
 
+
 number = 5
 
 name = 'name'
 
 print(number)
 print(name)
+
 
 # SubTopic: Data Types of Variables
 """
@@ -54,6 +59,7 @@ They are:
      step: An integer number specifying the incrementation.))
 """
 
+
 a = 5
 
 b = 2.0
@@ -70,12 +76,14 @@ m = range(10)
 
 # Note: There are some advanced data types like bytearray
 
+
 # SubTopic: Typecasting
 """
 Typecasting is like conversion of centimeters to meters.
 In variables typecasting is about converting from one data type to another.
 This is done by it's corresponding functions like str, int etc.
 """
+
 
 # integer
 n = 100
@@ -90,6 +98,7 @@ s = str(n)
 print(s)
 print(type(s))
 
+
 # SubTopic: Swapping Variables
 """
 We can swap variables in programming
@@ -97,12 +106,14 @@ but it is a bit difficult in other programming
 languages in python it is easy to swap variables.
 """
 
+
 x = 5
 y = 10
 
 x, y = y, x
 print('x =', x)
 print('y =', y)
+
 
 # SubTopic: Id’s of Variables
 """
@@ -112,11 +123,13 @@ it should be identified by the computer
 so every variable has a id different then it's name.
 """
 
+
 str1 = 'geek'
 print(id(str1))
 
 str2 = 'geek'
 print(id(str2))
+
 
 # SubTopic: Rules of Variables
 """
@@ -137,15 +150,18 @@ In programming they are the same as in math but they do
 operations on many operands etc.
 """
 
+
 x = 15
 y = 4
 print(x + y)
+
 
 # SubTopic: How to use operators with variables
 """
 We can use operators with variables in many ways
 like adding values etc which are stored in variables.
 """
+
 
 x = 15
 y = 4
@@ -168,6 +184,7 @@ print('x // y =', x // y)
 # Output: x ** y = 50625
 print('x ** y =', x ** y)
 
+
 # Topic: Print Statement
 """
 In above code we saw something print.
@@ -180,23 +197,29 @@ print is used to show something on console (Where output is shown to us).
 It can be manipulated with different ways by using special characters.
 """
 
+
 print(5)
+
 
 # SubTopic: \n New Line
 """
 \n is a special character which is used to show output in a new line.
 """
 
+
 print('Hello\nWorld!')
 
-# SubTopic: end=""
+
+# SubTopic: end=''
 """
 end='' is used to show output in the same line with or without a
 character after each line.
 """
 
+
 print('hello', end='')
 print('hello')
+
 
 # SubTopic: Variables and print
 """
@@ -205,6 +228,7 @@ So we can use print to show our output with variables.
 we can also print different data types like a string and a integer
 which is stored in a variable.
 """
+
 
 a = 5
 print(a)
@@ -224,19 +248,23 @@ print(e)
 f = 'name'
 print(f)
 
+
 # Topic: Strings
 """
 Strings are a sequence of characters in single, double and triple quotes ('', "", """""").
 """
 
+
 a = 'Hello'
 print(a)
+
 
 # SubTopic: String Functions
 """
 Functions are like actions on something like changing or checking the value etc.
 So then string functions are something which are used to manipulate or check the value of a string.
 """
+
 
 # len
 a = 'Hello, World!'
@@ -266,11 +294,13 @@ print('str[1:5] = ', string[1:5])
 # slicing 6th to 2nd last character
 print('str[5:-2] = ', string[5:-2])
 
+
 # SubTopic: f Strings
 """
 If we want show variables in between strings we use f strings.
 These are special type of string to show variables with strings.
 """
+
 
 val = 'Geeks'
 print(f'{val}for{val} is a portal for {val}.')
@@ -279,15 +309,18 @@ name = 'name'
 age = 23
 print(f'Hello, My name is {name} and I\'m {age} years old.')
 
+
 # SubTopic: Doc Strings
 """
 Doc strings are another special type of string which is written in triple quotes for documentation.
 These are also called as multi line comments.
 """
 
+
 a = """Lorem ipsum 
 dolor sit amet"""
 print(a)
+
 
 # SubTopic: Raw Strings
 """
@@ -295,8 +328,10 @@ Raw strings are also a special type of string used to show raw format of a strin
 if we keep a special character in between a string then to skip it we use raw strings.
 """
 
+
 s = r'Hi\nHello'
 print(s)
+
 
 # SubTopic: Single, Double, Triple quotes
 """
@@ -304,6 +339,7 @@ Single quotes are widely because of comfort. These is mostly used by programmers
 Double quotes are used when there is a single quote in between a string but we can also use it in case of single quotes.
 Triple quotes are for writing doc strings or if there is single and double quotes in a string.
 """
+
 
 # Single Quotes
 a = 'Hello'
@@ -317,6 +353,7 @@ print(a)
 a = """Hello"""
 print(a)
 
+
 # Topic: Inputs
 """
 When we need to interact with a user we take inputs.
@@ -324,6 +361,7 @@ Inputs are values given or taken by a user.
 By default inputs come in a string format
 but we can change the data type by typecasting.
 """
+
 
 val = input('Enter your value: ')
 print(val)
@@ -336,6 +374,7 @@ print(name1)
 # Printing type of input value
 print('type of number', type(num))
 print('type of name', type(name1))
+
 
 # Topic: More on Operators
 """
@@ -368,6 +407,7 @@ Types of arithmetic operators:
     7. Exponent (**)
 """
 
+
 x = 15
 y = 4
 
@@ -392,6 +432,7 @@ print('x ** y =', x % y)
 # Output: x ** y = 50625
 print('x ** y =', x ** y)
 
+
 # SubTopic: Relational Operators
 """
 Relational operators compares the values.
@@ -404,6 +445,7 @@ Types of relational operators:
     5. Greater than or equal to (>=)
     6. Less than or equal to (<=)
 """
+
 
 x = 10
 y = 12
@@ -426,6 +468,7 @@ print('x >= y is', x >= y)
 # Output: x <= y is True
 print('x <= y is', x <= y)
 
+
 # SubTopic: Logical Operators
 """
 Logical operators perform Logical operations like checking true or false.
@@ -434,6 +477,7 @@ Types of logical operators:
     2. Logical OR (or: True if either of the operands is true)
     3. Logical NOT (not: True if operand is false (complements the operand))
 """
+
 
 x = True
 y = False
@@ -444,13 +488,16 @@ print('x or y is', x or y)
 
 print('not x is', not x)
 
+
 # SubTopic: Unary Operator
 """
 Unary operator is to fetch a negative value of a number.
 """
 
+
 p = 9
 print(-p)
+
 
 # SubTopic: Bitwise Operators
 """
@@ -464,6 +511,7 @@ Types of bitwise operators:
     6. Bitwise Right Shift (>>: Shift right by pushing copies of the leftmost bit in from the left,
                             and let the rightmost bits fall off)
 """
+
 
 a = 10
 b = 4
@@ -494,6 +542,7 @@ b = -10
 print('a << 1 =', a << 1)
 print('b << 1 =', b << 1)
 
+
 # SubTopic: Assignment Operators
 """
 Assignment operators are used to assign values to the variables.
@@ -512,6 +561,7 @@ Types of Assignment operators:
     12. Bitwise Left Shift and Assign (>>=)
     13. Bitwise Right Shift and Assign (<<=)
 """
+
 
 x = 5  # x = 5
 print(x),
@@ -552,6 +602,7 @@ print(x)
 x <<= 5  # x = x << 5
 print(x)
 
+
 # SubTopic: Special Operators
 """
 Types of special operators:
@@ -563,6 +614,7 @@ Types of special operators:
         1. in
         2. not in
 """
+
 
 # Identity operators
 x1 = 5
@@ -597,6 +649,7 @@ print(1 in y)
 # Output: False
 print('a' in y)
 
+
 # SubTopic: Numeric Conversion
 """
 In python there are four types of number system.
@@ -609,6 +662,7 @@ They are:
 There are different functions to convert a number from one system to another.
 """
 
+
 # Octal (Base 8, 0-7)
 oct(25)
 
@@ -618,6 +672,7 @@ hex(23)
 # Binary (Base 2, 0-1)
 bin(23)
 
+
 # SubTopic: Errors of Operators
 """
 When dealing operators we can get errors in code.
@@ -625,10 +680,12 @@ Many errors come because we might perform operations on different
 data types like a number with a string.
 """
 
+
 # v = 'hello' + 5
 # print(v)
 
 # Note: This code does not work
+
 
 # Topic: Decision Control Flow
 """
@@ -644,16 +701,19 @@ if is a keyword used for determining whether a condition is true or false.
 If the condition is true then only it shall execute the following statements.
 """
 
+
 a = 33
 b = 200
 if b > a:
     print('b is greater than a')
+
 
 # SubTopic: If, Else
 """
 else is another keyword which tells python to try this condition
 if the previous condition was false.
 """
+
 
 a = 200
 b = 33
@@ -662,12 +722,14 @@ if b > a:
 else:
     print('a is greater than b')
 
+
 # SubTopic: If, Elif, Else
 """
 elif is also another keyword which tells python to try this condition
 if the previous if condition is false.
 We can use as many as if's, elif's or else we want but they should follow a order of if, elif, else.
 """
+
 
 a = 200
 b = 33
@@ -678,6 +740,7 @@ elif a == b:
 else:
     print('a is greater than b')
 
+
 # SubTopic: Nested If Statements
 """
 When we have if, elif, else inside if or elif or else than these are called as nested statements.
@@ -685,6 +748,7 @@ We can use them randomly with following the order.
 We can also be make infinite nested statements.
 We can also make infinite if, elif, else
 """
+
 
 num = float(input('Enter a number: '))
 if num >= 0:
@@ -694,6 +758,7 @@ if num >= 0:
         print('Positive number')
 else:
     print('Negative number')
+
 
 # Topic: Repetition Control Flow
 """
@@ -711,8 +776,10 @@ for loop is for iterating (repeating a operation) a sequence like a string etc.
 With for loop we can execute many operations for each value in a sequence.
 """
 
+
 for i in range(10):
     print(i)
+
 
 # SubTopic: for, else
 """
@@ -720,16 +787,19 @@ We can use for, else together in python in some scenarios like iterating a seque
 and if it is not true then do another operation only once.
 """
 
+
 for x in range(6):
     print(x)
 else:
     print('Finally finished!')
+
 
 # SubTopic: while Loop
 """
 while loop will execute a block of statements repeatedly until the condition is true.
 If the condition becomes false it will stop.
 """
+
 
 """
 Program to add natural
@@ -738,7 +808,7 @@ sum = 1+2+3+...+n
 """
 
 # To take input from the user,
-# n = int(input("Enter n: "))
+# n = int(input('Enter n: '))
 
 n = 10
 
@@ -762,6 +832,7 @@ while counter < 3:
 else:
     print('Inside else')
 
+
 # SubTopic: Nested Loops
 """
 When there is a loop inside a loop (Irrespective of which loop it is) is called as nested loops.
@@ -769,9 +840,11 @@ These nested loops can both while and for loops together.
 We can also be make infinite nested loops.
 """
 
+
 for x in range(10):
     for i in range(10):
         print(i)
+
 
 # SubTopic: Range
 """
@@ -786,6 +859,7 @@ break, continue, pass are keywords used mainly in loops.
 2. continue means leave this iteration and go to the next iteration.
 3. pass means there are no statements here, skip it. pass can also be used with if, elif, else statements.
 """
+
 
 # break
 """
@@ -821,6 +895,7 @@ sequence = {'p', 'a', 's', 's'}
 for val in sequence:
     pass
 
+
 # Topic: Python collections
 """
 Collections are a set of values which can be stored at once.
@@ -843,6 +918,7 @@ It is mutable (After making it we can change it).
 It is iterable.
 """
 
+
 thislist = ['apple', 'banana', 'cherry']
 print(thislist)
 
@@ -854,11 +930,13 @@ list2 = [1, 5, 7, 9, 3]
 list3 = [True, False, False]
 list4 = ['abc', 34, True, 40, 'male']
 
+
 # SubTopic: Functions of List
 """
 There are many functions of list like append, pop etc.
 These functions can only used on lists and some of them can be used on any data types.
 """
+
 
 # len
 cars = ['Ford', 'BMW', 'Volvo']
@@ -883,11 +961,12 @@ fruits.pop(1)
 
 # insert
 fruits = ['apple', 'banana', 'cherry']
-fruits.insert(1, "orange")
+fruits.insert(1, 'orange')
 
 # sort
 cars = ['Ford', 'BMW', 'Volvo']
 cars.sort()
+
 
 # SubTopic: List Comprehension
 """
@@ -898,6 +977,7 @@ but we have a elegant way to do this.
 We can make a for or while loop with if statements inside a list.
 This is called as list comprehension.
 """
+
 
 # Without list comprehension
 fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']
@@ -916,6 +996,7 @@ print(newlist)
 
 # Note: syntax: newlist = [expression for item in iterable if condition == True]
 
+
 # SubTopic: Tuple
 """
 Tuple is also a collection of values written inside parenthesis ( () ) separated by commas ( , )
@@ -923,6 +1004,7 @@ but unlike lists tuple is immutable (After making it we cannot change it)
 because of immutability there is no tuple comprehension.
 In other ways tuple is quite similar to list.
 """
+
 
 mytuple = ('apple', 'banana', 'cherry')
 
@@ -939,12 +1021,14 @@ print(type(thistuple))
 thistuple = ('apple')
 print(type(thistuple))
 
+
 # SubTopic: Functions of Tuple
 """
 There are many functions of tuple.
 Because tuple is immutable there fewer functions like append
 compared to other data types.
 """
+
 
 # count
 thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
@@ -956,6 +1040,7 @@ thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
 x = thistuple.index(8)
 print(x)
 
+
 # SubTopic: Set
 """
 Set is a collection of values written inside curly brackets ( {} ) separated by commas ( , )
@@ -964,6 +1049,7 @@ because it is unordered we cannot access items using indexes in it.
 We use sets in some scenarios instead of list because set is highly optimized method
 for checking whether a specific element is present.
 """
+
 
 myset = {'apple', 'banana', 'cherry'}
 
@@ -978,12 +1064,14 @@ print(thisset)
 
 # Note: Duplicate values will be ignored
 
+
 # SubTopic: Functions of Set
 """
 There are many functions in set.
 Because set is unordered there fewer functions like index
 compared to other data types.
 """
+
 
 # add
 fruits = {'apple', 'banana', 'cherry'}
@@ -1023,11 +1111,13 @@ y = {'google', 'microsoft', 'apple'}
 x.update(y)
 print(x)
 
+
 # SubTopic: Set Comprehension
 """
 Like list comprehensions we also have set comprehensions
 but result would be unordered because it is a set.
 """
+
 
 # Without set comprehension
 input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
@@ -1046,6 +1136,7 @@ input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
 set_using_comp = {var for var in input_list if var % 2 == 0}
 print('Output Set using set comprehensions:', set_using_comp)
 
+
 # SubTopic: Dictionary
 """
 Dictionary is a collection of values written inside square brackets ( {} )
@@ -1059,6 +1150,7 @@ whereas keys can’t be repeated and must be immutable.
 It is also called as mapping type because we map values to keys.
 It is like a mixture of set and list with key, value pair
 """
+
 
 thisdict = {
     'brand': 'Ford',
@@ -1079,14 +1171,15 @@ thisdict = {
 print(thisdict['brand'])
 
 # thisdict = {
-#   "brand": "Ford",
-#   "model": "Mustang",
-#   "year": 1964,
-#   "year": 2020
+#     'brand': 'Ford',
+#     'model': 'Mustang',
+#     'year': 1964,
+#     'year': 2020
 # }
 # print(thisdict)
 
 # Note: Duplicate values will overwrite existing values
+
 
 # SubTopic: Functions of Dictionary
 """
@@ -1094,6 +1187,7 @@ There are many functions in dictionary.
 Because dictionary is mapping type there few extra functions like keys
 compared to other data types.
 """
+
 
 # len
 print(len(thisdict))
@@ -1149,11 +1243,13 @@ car = {
 x = car.values()
 print(x)
 
+
 # Subtopic: Nested Dictionaries
 """
 A dictionary can contain dictionaries,
 this is called nested dictionaries.
 """
+
 
 myfamily = {
     'child1': {
@@ -1170,11 +1266,13 @@ myfamily = {
     }
 }
 
+
 # SubTopic: Dictionary Comprehension
 """
 Like set comprehension we also have dictionary comprehension
 but it is quite different then set comprehension because of key, value pair.
 """
+
 
 # Dictionary comprehension
 
@@ -1190,6 +1288,7 @@ myDict = {k: v for (k, v) in zip(keys, values)}
 
 print(myDict)
 
+
 # Topic: Typecasting in Collections
 """ 
 We can change a collection to another collection
@@ -1199,9 +1298,11 @@ it's specified brackets by using it's corresponding
 keyword like list, dict etc.
 """
 
+
 # We are converting a list into a tuple
 s = [1, 2, 3, 4, 5, 6]
 s = tuple(s)
+
 
 # Topic: Functions
 """
@@ -1224,6 +1325,7 @@ def greet():
 
 # Calling a function
 greet()
+
 
 # SubTopic: Types of Functions
 """
@@ -1249,6 +1351,7 @@ def my_function(fname, lname):
 
 
 my_function('Emil', 'Refines')
+
 
 # SubTopic: Pass by Value or Reference
 """
@@ -1278,6 +1381,7 @@ my_list = ['E']
 
 print(set_list(my_list))
 print(add(my_list))
+
 
 # SubTopic: Types of Parameters
 """
@@ -1352,6 +1456,7 @@ def myfun(**kwargs):
 
 myfun(first='Geeks', mid='for', last='Geeks')
 
+
 # SubTopic: Scope of Variables
 """
 Normally we make variables inside a function and also outside a function.
@@ -1406,6 +1511,7 @@ print('global : ', a)
 h()
 print('global : ', a)
 
+
 # SubTopic: Lambda Functions
 """
 Lambda functions are anonymous functions which means they have no name to them.
@@ -1413,6 +1519,7 @@ Normally when we make functions we should call them after making them
 but in lambdas they can be used anywhere.
 These are defined in one line so it is also called as one-liner functions.
 """
+
 
 gh = lambda a: a + 10
 print(gh(5))
@@ -1435,11 +1542,13 @@ print(cube(5))
 # using the lambda function
 print(lambda_cube(5))
 
+
 # SubTopic: map, filter, reduce
 """
 map, filter, reduce are some methods will can be used with lambdas and without it.
 These are methods used very commonly in programs.
 """
+
 
 # map with lambda
 # to get double of a list.
@@ -1463,6 +1572,7 @@ li = [5, 8, 10, 20, 50, 100]
 sum = reduce((lambda x, y: x + y), li)
 print(sum)
 
+
 # SubTopic: Recursion
 """
 Recursion is about calling the function inside the function.
@@ -1481,6 +1591,7 @@ def factorial(x):
 
 num = 3
 print('The factorial of', num, 'is', factorial(num))
+
 
 # SubTopic: Decorator
 """
@@ -1511,7 +1622,7 @@ def hello_decorator(func):
     # which the argument is called
 
     # inner function can access the outer local
-    # functions like in this case "func"
+    # functions like in this case 'func'
     def inner1():
         print('Hello, this is before function execution')
 
@@ -1576,6 +1687,7 @@ print('\nUsing for in loop')
 for i in fib(5):
     print(i)
 
+
 # Topic: Modular Programming
 """
 Modular programming is a way to write code and organize it.
@@ -1598,7 +1710,9 @@ into a python file or a module.
 These is mainly used to import built-in modules.
 """
 
+
 import math
+
 
 # SubTopic: from
 """
@@ -1606,7 +1720,9 @@ from is also a keyword used before import keyword to
 import a specific part of a module like a function etc.
 """
 
+
 from math import sqrt
+
 
 # SubTopic: Packages
 """
@@ -1673,6 +1789,7 @@ A special variable __name__ is to determine
 whether a module is the main module or not.
 """
 
+
 # File1.py
 
 print(f'File1 __name__ = {__name__}')
@@ -1693,6 +1810,7 @@ if __name__ == '__main__':
 else:
     print('File2 is being imported')
 
+
 # Topic: Math Module
 """
 Math module is used for doing advanced calculations
@@ -1705,7 +1823,8 @@ Array is also a python collection like list,set and tuple etc.
 But it is a bit more complex than others.
 """
 
-# importing "array" for array creations
+
+# importing 'array' for array creations
 import array as arr
 
 # creating an array with integer type
@@ -1728,11 +1847,13 @@ for i in range(0, 3):
 # Note: Python does not have built-in support for Arrays, but Python Lists can be used instead.
 #  However, to work with arrays in Python you will have to import a library, like the NumPy library.
 
+
 # SubTopic: Functions of array
 """
 There are many functions of array like typecode, itemsize etc.
 These functions can only used on arrays and some of them can be used also on any data types.
 """
+
 
 # array with int type
 a = arr.array('i', [1, 2, 3, 4, 5, 6])
@@ -1752,7 +1873,7 @@ print('Access element is: ', b[1])
 a = arr.array('i', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 print('Initial Array: ')
 for i in (a):
-    print(i, end=" ")
+    print(i, end=' ')
 
 # Print elements of a range
 # using Slice operation
@@ -1779,6 +1900,7 @@ print(funarray)
 funarrays = arr.typecode()
 print(funarrays)
 
+
 # SubTopic: Numpy Library
 """
 To use arrays more comfortably and effectivity we use numpy (A Library).
@@ -1794,6 +1916,7 @@ With numpy we can make a multi-dimensional array
 most likely a two-dimensional array.
 Two-Dimensional Array consists of various rows and columns like a matrix.
 """
+
 
 # Creating array object
 arr = np.array([[1, 2, 3],
@@ -1835,6 +1958,7 @@ cond = arr > 0  # cond is a boolean array
 temp = arr[cond]
 print('\nElements greater than 0:\n', temp)
 
+
 # Topic: Exception or Error handling
 """
 Errors are the problems in a program
@@ -1868,6 +1992,7 @@ except keyword is used to manipulate the error.
 finally is used to complete the error like closing a file.
 """
 
+
 a = [1, 2, 3]
 
 try:
@@ -1893,11 +2018,13 @@ finally:
     # regardless of exception generation.
     print('This is always executed')
 
+
 # SubTopic: Raising Exceptions
 """
 Sometimes we know a error can occur so we raise exceptions to handle it
 in such a way that user could understand like popping a message etc.
 """
+
 
 x = -1
 
@@ -1908,6 +2035,7 @@ x = 'hello'
 
 if not type(x) is int:
     raise TypeError('Only integers are allowed')
+
 
 # Topic: File I/O
 """
@@ -1938,6 +2066,7 @@ open keyword is used to open a file.
 It is mandatory to open the file before you work with it.
 """
 
+
 # a file named 'Python Learning',
 # will be opened with the reading mode.
 file = open('Python Learning.txt', 'r')
@@ -1954,12 +2083,14 @@ print(file.read())
 file = open('Python Learning.txt', 'r')
 print(file.read(5))
 
+
 # SubTopic: open, close
 """
 After you open the file and work with it,
 it is a good practice to close the file.
 To close a file we use the close keyword.
 """
+
 
 # create a file
 file = open('Python Learning.txt', 'w')
@@ -1972,6 +2103,7 @@ file = open('Python Learning.txt', 'a')
 file.write('This will add this line')
 file.close()
 
+
 # SubTopic: with Keyword
 """
 With the help of with suite (A group of individual statements which make a code block like if, for, while
@@ -1979,6 +2111,7 @@ and also with keywords. All suites require indentation. Suite is also called as 
 we no longer need to close the file because with block will close it by itself.
 It is a good practice to use with suite to work with files.
 """
+
 
 # with
 with open('Python Learning.txt') as file:
@@ -1994,5 +2127,6 @@ with open('Python Learning.txt', 'r') as file:
     for line in data:
         word = line.split()
         print(word)
+
 
 # Documentation: https://docs.python.org/3/
