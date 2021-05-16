@@ -1,0 +1,15 @@
+img {
+    width: 30%;
+    /* margin: 1.6666666%; */
+    margin: calc(10%/6); /* this is like a calcutor in css this is was used in olden days and its not a good practice */
+}
+
+nav {
+    font-family: 'Zen Dots', cursive;
+    font-size: 24.5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0;
+}

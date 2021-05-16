@@ -384,5 +384,4 @@ console.log(parsed);
 a = 34;
 console.log(`this is my ${a}`);
 
-// Documentation:https://www.w3schools.com/jsref/default.asp
 

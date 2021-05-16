@@ -1,0 +1,69 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row; /* Determines the flow of content. the default is row */
+    justify-content: center;
+    /* justify-content is based on flex direction which determines the main axis so justify-content changes when main axis is changed. it is used to space items on the main axis */
+    /* flex-wrap: wrap; */
+    /* flex-warp determines the cross axis direction the values are wrap, warp-reverse, nowarp. warp means go to the next row or column.warp-reverse reverses the cross axis. even if the element don't warp the cross axis changes by warp-reverse*/
+    align-items: center;
+    /* align items is based on flex warp which determines the cross axis. align items changes based on flex warp it is used to space items on the cross axis. it works with different sizes of elements based on their height.
+    Baseline is a option where the elements align according to the line of text or content inside a element but when all have equally sized content then baseline is same as flex-start*/
+    align-content: center;
+    /* align-content is used for spacing between the cross axis only when we have multiple rows or columns depending on the main axis. it acts only when flex warp is on*/
+    
+}
+
+#container div{
+    width: 200px;
+    height: 200px;
+    flex-basis: 600px;
+    /* flex basis is like a starting point and initial size of element when a element is added into the box of content. flex basis can be width or height of a element based on the main axis */
+}
+
+div:nth-of-type(2){
+    align-self: flex-start;
+    /* align self is uesd to align individual elements much like align items is used to align all the elements in flexbox.
+    this property is used on individual elements not on the flex container */
+    flex-grow: 1;
+    /* flex grow is used control the amount of space a element should take upif there is available space.it accepts only unit-less value because its about proportions like 5st div should  take up twice the available space of the 1st div. this works only when there is available space*/
+    flex-shrink: 3;
+    /* flex-shrink is opposite of flex grow. it is used to shrink elements when there is less space. we use unitless number because we are telling it to shrink relative to other elements. if we increase the the number then it will shrink more */
+}
+
+div:nth-of-type(5){
+    flex-grow: 2;
+    flex-shrink: 0; /* this means don't shrink at all */
+
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+    border: 3px solid black;
+    height: 600px;
+    display: flex;
+}
+
+main .sidebar{
+    background-color: aqua;
+    flex: 1 2 320px;
+    /* flex is shorthand for flex grow, flex shrink, flex basis */
+}
+
+main .maincontent{
+    background-color: rgb(0, 0, 0);
+    flex: 2 1 820px;
+}

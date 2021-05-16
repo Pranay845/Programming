@@ -1,0 +1,25 @@
+body{
+    font-family: 'Goblin One', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #252323;
+    
+}
+button{
+    background: none;
+    color:#ffa260;
+    border: 3px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 7px;
+    transition:  border-color 0.24s, color 0.24s, box-shadow 0.24s, transform 0.24s, cursor 0.24s;
+}
+button:hover{
+    border-color: #ffbb00;
+    color: whitesmoke;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffbb00;
+    transform: translateY(-0.4em);
+    cursor: pointer;
+}

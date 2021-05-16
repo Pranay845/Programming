@@ -1,0 +1,53 @@
+html{
+    font-size: 20px;
+}
+section{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}
+div{
+    background-color: green;
+    width: 40%; /*respective to its parent element*/
+    height: 20%;
+}
+h1{
+    font-size: 40px;
+    border: 2px solid red;
+    line-height: 200%; /* respective to its font size */
+}
+article{
+    font-size: 20px; 
+    margin-left: 1em;
+}
+p{
+    font-size: 1em; /* em are relative to font size. with font size property itself its relative to its parent element's font size */
+}
+h3{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 2em;
+}
+button{
+    font-size: 1em; 
+    padding: 1em; /* with other properties its relative to the element's fontsize  */
+    background-color: blue;
+    border-radius: 0.5em;
+
+}
+ul{
+    font-size: 1.5em;
+}
+#rems h2{
+    font-size: 3rem;
+}
+#rems h3 {
+    font-size: 4rem;
+}
+#rems ul{
+    font-size: 2rem;
+}
+#rems button{
+    font-size: 1.5rem;
+}

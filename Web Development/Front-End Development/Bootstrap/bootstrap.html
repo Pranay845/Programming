@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="display-1">
+        Hello Guys!<span class="badge rounded-pill bg-info text-dark"
+          >Info</span
+        >
+      </h1>
+      <p class="lead text-light bg-secondary">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+        voluptatem accusantium temporibus doloremque cupiditate similique eos
+        laborum ab molestias consectetur? Distinctio iure, alias corporis autem
+        officiis nihil vitae laboriosam aliquam.<span class="badge bg-dark"
+          >Dark</span
+        >
+      </p>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-outline-dark">Dark outline</button>
+      <button type="button" class="btn btn-outline-info">Info outline</button>
+      <button type="button" class="btn btn-success btn-lg">Large button</button>
+      <button type="button" class="btn btn-warning btn-sm">SM button</button>
+      <h1 class="display-5">Display 5</h1>
+      <h1 class="display-6">Display 6</h1>
+      <figure>
+        <blockquote class="blockquote text-center">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer text-center">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+      <button type="button" class="btn btn-primary">
+        Notifications <span class="badge bg-secondary">4</span>
+      </button>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Left</button>
+        <button type="button" class="btn btn-danger">Middle</button>
+        <button type="button" class="btn btn-primary">Right</button>
+      </div>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <h1>Hello</h1>
+        <strong>Holy fish!</strong> You should check in on some of those fields
+        below.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>
+          Aww yeah, you successfully read this important alert message. This
+          example text is going to run a bit longer so that you can see how
+          spacing within an alert works with this kind of content.
+        </p>
+        <hr />
+        <p class="mb-0">
+          Whenever you need to, be sure to use margin utilities to keep things
+          nice and tidy.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4 bg-danger">One Third</div>
+        <div class="col-8 bg-info">Two Thirds</div>
+      </div>
+      <div class="row">
+        <div class="col-3 bg-warning">One Quarter</div>
+        <div class="col-6 bg-danger">One Half</div>
+        <div class="col-3 bg-warning">One Quarter</div>
+      </div>
+      <div class="row">
+        <div class="col bg-info">i am auto sized</div>
+        <div class="col bg-success">i am auto sized</div>
+        <div class="col-5 bg-dark text-light">One Thrid</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 bg-dark text-light">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+        <div class="col-6 col-md-4 bg-danger">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 col-md-4 bg-primary">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+        <div class="col-6 col-md-4 bg-success">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+        <div class="col-6 col-md-4 bg-info">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 bg-warning">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+        <div class="col-6 bg-primary">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 col-lg-6 bg-secondary">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+        <div class="col-4 col-lg-6 bg-danger">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+        <div class="col-4 col-lg-6 bg-primary">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+        <div class="col-4 col-lg-6 bg-info">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          minus, expedita maxime aspernatur soluta suscipit ex fugiat
+          perferendis fuga nihil voluptates reiciendis illo cum, dolor laborum
+          aperiam, est vero rem!
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1589595363745-d842812a9db7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1511692277506-3be3a7ab1686?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
+        </div>
+      </div>
+      <h2>Grid Alignment</h2>
+      <div class="row align-items-center">
+        <div class="col-3 bg-danger">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quos
+          quam minus recusandae nisi culpa, in eius beatae quae blanditiis
+          aliquam. Eum cumque ut atque fuga dolorem fugiat est suscipit.
+        </div>
+        <div class="col-3 bg-warning">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quos
+          quam minus recusandae nisi culpa, in eius beatae quae blanditiis
+          aliquam. Eum cumque ut atque fuga dolorem fugiat est suscipit. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Nisi quidem
+          adipisci deleniti voluptatum sapiente autem, veniam nostrum ipsum
+          voluptatibus, voluptas non soluta accusantium amet suscipit, sint
+          veritatis dolorum commodi asperiores!Minima, id, a doloremque corporis
+          qui non laborum reiciendis, at necessitatibus harum dolorem tenetur
+          quos nesciunt ratione aliquam aperiam beatae dolor nam. Iste similique
+          sequi vitae nesciunt cumque! Distinctio, assumenda?
+        </div>
+        <div class="col-3 bg-success">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quos
+          quam minus recusandae nisi culpa, in eius beatae quae blanditiis
+          aliquam. Eum cumque ut atque fuga dolorem fugiat est suscipit. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Similique,
+          blanditiis nisi fugiat vel unde ratione aliquam incidunt provident
+          sit, voluptates excepturi aspernatur aliquid ullam eaque eum nobis
+          hic, delectus corporis!
+        </div>
+        <div class="col-3 bg-info align-self-end">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quos
+          quam minus recusandae nisi culpa, in eius beatae quae blanditiis
+          aliquam. Eum cumque ut atque fuga dolorem fugiat est suscipit.
+        </div>
+      </div>
+
+      <h3>Justify Content</h3>
+      <div
+        class="
+          row
+          border
+          justify-content-center
+          justify-content-lg-start
+          justify-content-xl-between
+        "
+      >
+        <div class="col-md-4 bg-primary">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, vero
+          iure provident, officia saepe soluta accusantium repellat sunt
+          repellendus fugit iste deleniti, blanditiis eveniet hic quas a ipsa
+          amet dolore?
+        </div>
+        <div class="col-md-4 bg-info">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, vero
+          iure provident, officia saepe soluta accusantium repellat sunt
+          repellendus fugit iste deleniti, blanditiis eveniet hic quas a ipsa
+          amet dolore?
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h1 class="display-2">Icons</h1>
+      <button class="btn btn-primary btn-lg text-dark">
+        Hello<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-alt"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M1 13.5a.5.5 0 0 0 .5.5h3.797a.5.5 0 0 0 .439-.26L11 3h3.5a.5.5 0 0 0 0-1h-3.797a.5.5 0 0 0-.439.26L5 13H1.5a.5.5 0 0 0-.5.5zm10 0a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="container">
+      <h1 class="display-1 mb-5">Utilities</h1>
+      <div class="row">
+          <div class="col-md-4 border rounded border-success shadow">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, amet! Cupiditate quisquam fuga, dolores
+              quasi laborum beatae maiores hic numquam sint quae optio autem magni provident ratione earum?
+              Aspernatur, ullam!
+          </div>
+      </div>
+      <div>
+          <button class="btn btn-primary p-0">Padding 0</button>
+          <button class="btn btn-primary p-1">Padding 1</button>
+          <button class="btn btn-primary p-2">Padding 2</button>
+          <button class="btn btn-primary p-3">Padding 3</button>
+          <button class="btn btn-primary p-4">Padding 4</button>
+          <button class="btn btn-primary p-5">Padding 5</button>
+      </div>
+      <div class="my-5">
+          <button class="btn btn-primary p-0 pt-5">Padding Top</button>
+          <button class="btn btn-primary p-0 pl-5">Padding Left</button>
+          <button class="btn btn-primary p-0 pb-5">Padding Bottom</button>
+          <button class="btn btn-primary p-0 pr-5">Padding Right</button>
+          <button class="btn btn-primary p-0 px-5">Padding X</button>
+          <button class="btn btn-primary p-0 py-5">Padding Y</button>
+      </div>
+
+      <button class="btn btn-danger p-0 p-sm-1 p-md-2 p-lg-3 p-xl-5">I CHANGE!</button>
+  </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

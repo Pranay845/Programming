@@ -1,0 +1,23 @@
+
+span{
+    background-color: rgb(255, 0, 255);
+    border: 3px solid rgb(26, 219, 9);
+    width: 10px; /* ignored */
+    padding: 10px;
+    margin: 20px; /*ignored vertically*/
+}
+h1{
+    background-color: rgb(255, 0, 255);
+    border: 3px solid rgb(26, 219, 9);
+    padding: 30px;
+    margin: 45px;
+    display: none; /* this hides the element*/
+}
+div{
+    width: 200px;
+    height: 250px;
+    background-color: orangered;
+    border: 10px solid black;
+    margin: 20px;
+    display: inline-block; /*nothing is ignored but it behaves like a inline element even its block element*/
+}

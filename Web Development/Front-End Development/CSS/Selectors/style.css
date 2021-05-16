@@ -1,0 +1,67 @@
+/* *{
+    background-color: aqua;
+} */
+
+button{
+    font-weight: 600;
+    background-color: #0088ff;
+}
+
+h2, button{
+    color: #00fff2b4;
+}
+
+#login{
+    background-color: burlywood;
+    color: black;
+}
+
+span{
+    color: aqua;
+}
+.tags{
+    background-color: black;
+    font-size: 10px;
+}
+.item a{
+    color: blanchedalmond;
+}
+footer a{
+    color: #0088ff;
+}
+h2+button{
+    color:darkgreen;
+}
+footer > a{
+    color: darkred;
+}
+input [type="password"] {
+    color:gainsboro;
+}
+section[class="item"]{
+    font-size: large;
+}
+a [href*="google"]{
+    color:orange;
+}
+li a:hover{
+    text-decoration: none;
+}
+a:active{
+    color: #0088ff;
+}
+.post:nth-of-type(2n){
+     color: goldenrod;
+}
+h2::first-letter{
+    font-size: 60px;
+}
+p::first-line{
+    color: palegoldenrod;
+}
+p::selection{
+    background-color: yellow;
+}
+p::after{
+    color: #0088ff !important;
+}

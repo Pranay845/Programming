@@ -1,0 +1,41 @@
+.circle{
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+    transition: border-radius 2s, background-color 1s 1s;  /* only border radius will be animated with 1 second delay will go both directions start and also end of animation. we also can add all instead of border radius.
+    using all in transtion for properties is not a good pratice*/
+}
+.circle:hover{
+    background-color: aqua;
+    border-radius: 50%;
+    color: #fdba00dc;
+    /* width: 200px;
+    height: 200px;
+    margin: 50px; */
+}
+
+/* timing function */
+section div {
+    height: 50px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 5s;
+} 
+
+section:hover div {
+    margin-left:1000px;
+}
+
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+div:nth-of-type(4){
+    transition-timing-function:  cubic-bezier(.24,.83,1,-0.61);
+} 
