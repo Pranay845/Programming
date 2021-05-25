@@ -61,6 +61,7 @@ many classes and many id's in css can be selected.
 
 CSS has a intelligent container called has Flexbox.
 
-CSS can be written in sass.
-Sass makes the css easy.
-We should convert sass into css because it's written in ruby.
+What is Sass?
+	Sass is a CSS extension language. It gives css superpowers.
+	Your browser cannot understand sass so it should complied into plain css.
+	So to compile sass files we can use a vs code extension called live sass compiler.
