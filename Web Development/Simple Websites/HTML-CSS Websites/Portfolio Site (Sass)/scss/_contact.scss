@@ -1,0 +1,29 @@
+.contact{
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+    linear-gradient(to right, rgba($primary-color,0.9), rgba($primary-color,0.3)),
+    url('../Images/pose_f30.png') center top; 
+    background-size: cover;
+
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &_list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .social-icons{
+        position: initial;
+        margin: 2rem;
+    }
+}

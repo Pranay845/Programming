@@ -1,0 +1,13 @@
+// these are sass variables
+$primary-color: #272727;
+$accent-color: #ff6600f1;
+$text-color: #ffffff;
+
+// Maps are like arrays in javascript. They key value pairs
+$font-weights:(
+    "regular": 400,
+    "medium": 600,
+    "bold": 700,
+);
+
+$mobile: 800px;
