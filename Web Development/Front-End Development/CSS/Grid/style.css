@@ -1,0 +1,83 @@
+/* In CSS Grid, the gird is two-demensional which there can rows and columns together 
+at the same time but in flexbox it is one-demensional so there can only a row or a column */
+
+/* In grid we have to a container to warp our grid items.
+There are rows and columns but they are defined by lines.
+These lines are at the start and end also in between of both the grid rows and the columns.
+Each block is a grid cell.
+
+The rows and the columns are called as tracks.
+A track can be a entire row or a column.
+
+Areas consists of multiple cells together.
+These areas can only be in rectangles and squares.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+  }
+  
+  .grid-container {
+    height: 100vh;
+    border: 10px solid #14a76c;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    /* grid-template-rows is used to define the grid rows.*/
+    
+    grid-template-columns: repeat(3, 1fr); 
+    /* grid-template-columns is used to define the grid columns.
+    repeat is function which takes two values they are how mant to repeat and the value of size.
+    In grid we mostly use fractions to define sizes */
+
+    /* grid-auto-rows and grid-auto-columns are properties used to define the subsequent rows or columns which are not defined by grid-template-rows or grid-template-columns */
+
+    justify-items: center; 
+    /* justify-items is used to horizontally position the content inside a grid cell */
+    
+    align-items: center; 
+    /* align-items is used to vertically position the content inside a grid cell */
+
+    justify-content: center; 
+    /* justify-content is used to horizontally position the entire content inside a grid */
+
+    align-content: center; 
+    /* align-content is used to vertically position the entire content inside a grid */
+
+    gap: 20px;
+    /* gap is the shorthand for row-gap and column-gap and
+    gap is used defining the margin between the grid cells */
+  }
+  
+  .grid-item {
+    background-color: #ccc;
+    border: 4px solid #ff652f;
+    padding: 20px;
+  }
+  
+  .item-1 {
+    grid-column: 1 / 3;
+    /* grid-column or grid-row is used to define width or height of the grid cell and 
+    in it is done by specifying the start and end lines to the grid cell by <start line> / <end line> */
+  }
+  .item-2 {
+    grid-area: 1 / 3 / 3 / 4;
+    /* grid-area is used to define th area of the grid cell by <row start line> / <column start line> / <row end line> / <column end line> */
+
+    z-index: 1;
+    /* z-index is used for overlaping the grid cell if it is overlaped by another grid cell before and z-index value determines the layers of elements on which the grid cell should be overlaped (z axis) by this we can also create mosaic layouts using grid */
+  }
+  .item-3 {
+    grid-area: 2 / 1 / span 3 / span 2;
+    /* span is used to specify the number of row or columns 
+    based in the property instead of the start and the end lines of rows and columns */
+  }
+  .item-4 {
+    grid-area: 2 / 2 / span 2 / span 2;
+    /* we can overlap grid cells by grid properties*/
+  }
+  .item-5 {
+    place-self: center center;
+    /* place-self is the shorthand for align-self and justify-self and these properties are used to position the individual grid cell vertically or horizontally and the first value in place self is align-self value and the last value is justify-self value*/
+  }
